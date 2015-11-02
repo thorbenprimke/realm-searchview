@@ -19,14 +19,12 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
 
     public RealmSearchAdapter(
             Context context,
-            RealmResults<T> realmResults,
             Class modelClass,
             String filterColumnName) {
-        super(context, realmResults, false, false);
+        super(context, null, false, false);
         this.modelClass = modelClass;
         this.filterColumnName = filterColumnName;
     }
-
 
     public void filter(Context context, String input) {
         RealmResults<T> businesses;

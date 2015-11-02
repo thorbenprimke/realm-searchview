@@ -1,0 +1,1577 @@
+[
+    {
+        "title": "Realm Java 0.82.0 with in-memory Realm support!",
+        "url": "/news/realm-java-0.82.0/",
+        "date": "July 28, 2015",
+        "content": "We just released a Realm Java update to this website, and to Maven. This release includes new features like in-memory...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Object-Oriented Functional Programming: The Best of Both Worlds!",
+        "url": "/news/altconf-saul-mora-object-orientated-functional-programming/",
+        "date": "July 28, 2015",
+        "content": "If a functional language is essentially a language where you can take a function, and assign it to a variable,...",
+        "image": "https://realm.io/assets/news/altconf-saul-mora-cover.png"
+    },
+    {
+        "title": "Simplifying RESTful API Use & Data Persistence on iOS with Mantle + Realm",
+        "url": "/news/tutorial-mantle-realm/",
+        "date": "July 27, 2015",
+        "content": "Today's blogpost is by Marcin Kmiec, a freelance software engineer at Toptal, and was originally published on on Toptal's blog....",
+        "image": "https://realm.io/assets/news/tutorial-mantle-realm.png"
+    },
+    {
+        "title": "\"Beyond the Grid\" Creating Unique, High Performance Interfaces With UICollectionView",
+        "url": "/news/altconf-nathan-eror-uicollectionview/",
+        "date": "July 25, 2015",
+        "content": "Many iOS developers think of UICollectionView as UITableView with a grid. But with a little math and a lot of...",
+        "image": "https://realm.io/assets/news/altconf-nathan-cover.png"
+    },
+    {
+        "title": "The Worst Code",
+        "url": "/news/altconf-michele-titolo-worst-code/",
+        "date": "July 23, 2015",
+        "content": "Every developer has been there late at night, with a deadline looming, we pile hack on top of hack...",
+        "image": "https://realm.io/assets/news/altconf-michele-cover.png"
+    },
+    {
+        "title": "The Beginning of a Love Story with Realm",
+        "url": "/news/love-story-with-realm/",
+        "date": "July 21, 2015",
+        "content": "Today's blogpost is by Genady Okrain, a developer in Israel addicted to making shiny apps, and is originally published on...",
+        "image": "https://realm.io/assets/news/love-story-realm-cover.png"
+    },
+    {
+        "title": "Power Up Your Animations!",
+        "url": "/news/altconf-marin-todorov-animations/",
+        "date": "July 21, 2015",
+        "content": "Everyone knows how to create simple animations, but what if you want to create awesomely fantastically beautiful animations? Marin Todorov,...",
+        "image": "https://realm.io/assets/news/altconf-marin-cover.png"
+    },
+    {
+        "title": "Humanities x Technology",
+        "url": "/news/altconf-ashley-nelson-hornstein-humanities-technology/",
+        "date": "July 18, 2015",
+        "content": "What does it mean for the industry to approach technology with a humanities approach? Companies are beginning to learn that...",
+        "image": "https://realm.io/assets/news/altconf-ashley-cover.png"
+    },
+    {
+        "title": "Correct Behavior Through Type Safety",
+        "url": "/news/altconf-justin-spahr-summers-type-safety/",
+        "date": "July 16, 2015",
+        "content": "Swift has brought a much stronger type system to Cocoa development, which helps catch more bugs at compile-time, before they...",
+        "image": "https://realm.io/assets/news/altconf-spahr-summers-cover.png"
+    },
+    {
+        "title": "Realm First Birthday",
+        "url": "/news/realm-first-birthday/",
+        "date": "July 15, 2015",
+        "content": "Today is our 1st birthday! Thanks all for a thrilling year. Read all about it in Business Insider.",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Swifty Methods",
+        "url": "/news/swift-summit-swifty-methods-clarity-brevity/",
+        "date": "July 14, 2015",
+        "content": "With the introduction of Swift, incredibly long Objective-C APIs now have the chance to be updated to shorter, more readable...",
+        "image": "https://realm.io/assets/news/summit-radek-cover.png"
+    },
+    {
+        "title": "View from the Other Side",
+        "url": "/news/swift-summit-gem-barrett-other-side/",
+        "date": "July 14, 2015",
+        "content": "Using native versus web apps for mobile platforms is an ongoing battle. In the midst of this debate, Gem Barrett...",
+        "image": "https://realm.io/assets/news/summit-gem-cover.png"
+    },
+    {
+        "title": "Michael Helmbrecht joins Realm",
+        "url": "/news/michael-helmbrecht-joins-realm/",
+        "date": "July 14, 2015",
+        "content": "We're delighted to announce that Michael Helmbrecht has joined Realm. He will be helping us in San Francisco, California! Michael...",
+        "image": "https://realm.io/assets/news/michael-joins-cover.png"
+    },
+    {
+        "title": "Git as a Document Format",
+        "url": "/news/altconf-wil-shipley-git-as-a-document-format/",
+        "date": "July 14, 2015",
+        "content": "I'll discuss the advantages and pitfalls of traditional Cocoa file formats (archives, plists, XML, and CoreData), and the traditional way...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Altconf Videos",
+        "url": "/news/altconf-videos/",
+        "date": "July 14, 2015",
+        "content": "Most videos from AltConf 2015 are now available. Enjoy!",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Making a Lasting Impact Panel",
+        "url": "/news/altconf-victor-agreda-saul-mora-jay-freeman-delisa-mason-making-a-lasting-impact-panel/",
+        "date": "July 14, 2015",
+        "content": "Victor Agreda, Saul Mora, Jay Freeman, Delisa Mason With the constantly shifting topography of mobile and Apple platforms in general,...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Buck: An Alternative Build Tool",
+        "url": "/news/altconf-uri-baghin-buck-an-alternative-build-tool/",
+        "date": "July 14, 2015",
+        "content": "Conventional build tools like xcodebuild are designed to run builds on a single machine. Incremental builds are made faster by...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "All the I/O News That You Should Care About",
+        "url": "/news/altconf-todd-kerpelman-all-the-i-o-news-that-you-should-care-about/",
+        "date": "July 14, 2015",
+        "content": "What?!? You didn't sit through all 2 days of Google I/O content to find out what bits were relevant to...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Cocoa & Robots",
+        "url": "/news/altconf-taylan-pince-cocoa-robots/",
+        "date": "July 14, 2015",
+        "content": "Hardware Prototyping for Software Developers: How to build physical products that talk to mobile apps As software developers, it has...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "iOS GPU Programming With Swift & Metal",
+        "url": "/news/altconf-simon-gladman-ios-gpu-programming-with-swift-metal/",
+        "date": "July 14, 2015",
+        "content": "This talk describes the steps required to implement a particle system in Swift that runs on the GPU using Apple's...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "How Indoor Location Will Change Your User Experience",
+        "url": "/news/altconf-scott-brewer-how-indoor-location-will-change-your-user-experience/",
+        "date": "July 14, 2015",
+        "content": "Indoor location is here (in iOS 9 it might even be out of beta!) and it is going to change...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Object-Oriented Functional Programming: The Best of Both Worlds!",
+        "url": "/news/altconf-saul-mora-object-oriented-functional-programming-the-best-of-both-worlds/",
+        "date": "July 14, 2015",
+        "content": "Functional programming is finally a first class citizen in the Cocoa toolset! But, Swift is not necessarily a pure functional...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "NSFWObjectiveC",
+        "url": "/news/altconf-sash-zats-nsfwobjectivec/",
+        "date": "July 14, 2015",
+        "content": "Put your UITableViewCells aside, and witness the power of Objective-C runtime! This code-heavy talk will walk you through several lesser-known...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Designing for Fun",
+        "url": "/news/altconf-sarah-allen-designing-for-fun/",
+        "date": "July 14, 2015",
+        "content": "Making your app fun to use requires more than sprinkling a little gamification on top. It requires thoughtful imagination and...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "An OSS Education",
+        "url": "/news/altconf-samuel-e-giddins-an-oss-education/",
+        "date": "July 14, 2015",
+        "content": "Open source started out as a fun hobby for me when I was learning to code professionally. Little did I...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Building Habits: Keeping Users Engaged",
+        "url": "/news/altconf-sally-shepard-building-habits-keeping-users-engaged/",
+        "date": "July 14, 2015",
+        "content": "So you've got some downloads but downloads don't necessarily equate to active users. How can you engage a first time...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Building Instagram With WatchKit",
+        "url": "/news/altconf-ryan-nystrom-arnaud-coomans-building-instagram-with-watchkit/",
+        "date": "July 14, 2015",
+        "content": "Instagram was one of the few lucky apps that were demo'd when Apple had the second Apple Watch keynote. Getting...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "State of the Alt",
+        "url": "/news/altconf-rob-elkin-state-of-the-alt/",
+        "date": "July 14, 2015",
+        "content": "Rob Elkin gives an overview of this years planning and what the future holds for Altconf. A panel discussion and...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Overloading Comparison",
+        "url": "/news/altconf-ray-wenderlich-overloading-comparison/",
+        "date": "July 14, 2015",
+        "content": "As iOS developers bombarded by news and Twitter, we constantly compare ourselves to others - more knowledgeable developers, more popular...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Objective-C++: What Could Possibly Go Wrong?",
+        "url": "/news/altconf-peter-steinberger-objective-c-what-could-possibly-go-wrong/",
+        "date": "July 14, 2015",
+        "content": "We're digging into the beautiful madness called Objective-C++ and look at use cases where it's great, where it's terrible and...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Technology Journalism Panel",
+        "url": "/news/altconf-peter-cohen-victor-agreda-jim-dalrymple-neil-ticktin-dave-hamilton-technology-journalism-panel/",
+        "date": "July 14, 2015",
+        "content": "Peter Cohen, Victor Agreda, Jim Dalrymple, Neil Ticktin, Dave Hamilton How to get your app noticed by the media",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "How to Get Your App Noticed by the Media",
+        "url": "/news/altconf-peter-cohen-how-to-get-your-app-noticed-by-the-media/",
+        "date": "July 14, 2015",
+        "content": "There's no procedure to follow that guarantees the media is going to pay attention to your app. But in this...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Being Nice in Open Source",
+        "url": "/news/altconf-orta-therox-being-nice-in-open-source/",
+        "date": "July 14, 2015",
+        "content": "The ruby world has a phrase, Matz is Nice So We Are Nice.' Matz is the nickname for the creator...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Swift Thinking",
+        "url": "/news/altconf-natasha-murashev-swift-thinking/",
+        "date": "July 14, 2015",
+        "content": "This talk is targeted at Objecitve-C developers who are starting to or interested in switching to Swift. Instead of converting...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "With a Little Help",
+        "url": "/news/altconf-mila-schultz-with-a-little-help/",
+        "date": "July 14, 2015",
+        "content": "All of a sudden you hold a junior developer's life in your hand. Now, you have to water it and...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Planetary Engineering",
+        "url": "/news/altconf-mike-lee-planetary-engineering/",
+        "date": "July 14, 2015",
+        "content": "Maybe it's naive to start a company to do more than make money. Maybe it's arrogant to want to change...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "The User \"Journey\" Is Actually a Minefield",
+        "url": "/news/altconf-michael-mace-the-user-journey-is-actually-a-minefield/",
+        "date": "July 14, 2015",
+        "content": "Enchanted by the success of experience-oriented companies like Apple and Uber, we all want to create the ultimate integrated customer...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Everything You Wanted to Know About Crypto, but Were Afraid to Ask",
+        "url": "/news/altconf-michael-gorbach-everything-you-wanted-to-know-about-crypto-but-were-afraid-to-ask/",
+        "date": "July 14, 2015",
+        "content": "Cryptography can be scary, but it's becoming more important every day. Learn about the basic building blocks of cryptographic systems,...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Development for Artists, Poets, and Lovers",
+        "url": "/news/altconf-michael-critz-development-for-artists-poets-and-lovers/",
+        "date": "July 14, 2015",
+        "content": "Learn how everyone, even you, can write code. Michael explains how he learned to write code even with a full...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Imagine a Fully Diverse & Inclusive World",
+        "url": "/news/altconf-melinda-briana-epler-imagine-a-fully-diverse-inclusive-world/",
+        "date": "July 14, 2015",
+        "content": "We talk about the diversity numbers a lot, it's an uphill battle that can be disheartening and sometimes depressing...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Making Users Smile, Laugh, and Cry",
+        "url": "/news/altconf-maxim-cramer-making-users-smile-laugh-and-cry/",
+        "date": "July 14, 2015",
+        "content": "A lot of our jobs are about designing delightful experiences, but what makes a user feel delight? As iOS developers...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Lessons in App PR: How to Launch",
+        "url": "/news/altconf-matt-ronge-lessons-in-app-pr-how-to-launch/",
+        "date": "July 14, 2015",
+        "content": "Getting the tech press to write about your app can drive huge amounts of traffic and give you instant credibility....",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Advanced UITableViews for Fun and Profit",
+        "url": "/news/altconf-mason-glidden-advanced-uitableviews-for-fun-and-profit/",
+        "date": "July 14, 2015",
+        "content": "UITableViews are the bread and butter of many iOS developers. They're fast and modular, forming the core experience of many...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Localization! Because 영어 n'est pas 足够 por todo el mundo",
+        "url": "/news/altconf-laura-savino-localization-because-n-est-pas-por-todo-el-mundo/",
+        "date": "July 14, 2015",
+        "content": "You know you should be using NSLocalizedString in all your user-facing text, but how exactly is your app going to...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Practical Declarative Programming",
+        "url": "/news/altconf-kyle-fuller-practical-declarative-programming/",
+        "date": "July 14, 2015",
+        "content": "A practical introduction to declarative programming and how it can be applied to the real world. The talk will cover...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Making Online Learning Accessible",
+        "url": "/news/altconf-kortney-ryan-ziegler-making-online-learning-accessible/",
+        "date": "July 14, 2015",
+        "content": "I am currently building a startup focused on providing business education and want to share lessons learned in making an...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Less Data, More Research",
+        "url": "/news/altconf-kh-mahmudul-alam-less-data-more-research/",
+        "date": "July 14, 2015",
+        "content": "The idea of my presentation is to demonstrate a QoS aware information retrieval framework that will complement Apple's ResearchKit. This...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Helping Stakeholders With Change",
+        "url": "/news/altconf-kevin-snead-willow-tree-helping-stakeholders-with-change/",
+        "date": "July 14, 2015",
+        "content": "Every year WillowTree has to anticipate and adjust to the new features of iOS (and other platforms) with an eye...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Perceptual Debugging",
+        "url": "/news/altconf-kendall-gelner-perceptual-debugging/",
+        "date": "July 14, 2015",
+        "content": "This talk is about approaching debugging as a perceptual learning task, covering how to use tools to reveal the patterns...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Designing Mobile Apps for Kids",
+        "url": "/news/altconf-kathryn-rotondo-designing-mobile-apps-for-kids/",
+        "date": "July 14, 2015",
+        "content": "Young children can seem to \"get\" touch devices right away, but there are a number of things you can do...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "The Social Coding Contract",
+        "url": "/news/altconf-justin-searls-the-social-coding-contract/",
+        "date": "July 14, 2015",
+        "content": "Social coding revolutionized how we share useful code with others. Tools like Github, CocoaPods, and Carthage have made publishing and...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Fixing the Swift Tooling Problem",
+        "url": "/news/altconf-jp-simard-fixing-the-swift-tooling-problem/",
+        "date": "July 14, 2015",
+        "content": "A common refrain about Swift is that the language is great, but the the tooling makes writing it a big...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Mastering Time and Space: Testing the Objective-C Runtime",
+        "url": "/news/altconf-joshua-marker-mastering-time-and-space-testing-the-objective-c-runtime/",
+        "date": "July 14, 2015",
+        "content": "Testing in Objective C is not as powerful or useful as it could be. The out-of-the-box tools are still a...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Deprecated Incorporated",
+        "url": "/news/altconf-josh-michaels-deprecated-incorporated/",
+        "date": "July 14, 2015",
+        "content": "It's every Apple developers worst nightmare. Your app is doing well, business is going fine, then all of a sudden...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "CoreBluetooth and You!",
+        "url": "/news/altconf-jon-shier-corebluetooth-and-you/",
+        "date": "July 14, 2015",
+        "content": "Bluetooth devices are all around us. Whether in our fitness bands, watches, or door locks, using this technology can lead...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Design Is Not for Designers",
+        "url": "/news/altconf-joe-cieplinski-design-is-not-for-designers/",
+        "date": "July 14, 2015",
+        "content": "In this talk, we'll take a look at examples of products that are designed well, not because of how they...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Making Apple Devices Work Together",
+        "url": "/news/altconf-jeff-kelley-making-apple-devices-work-together/",
+        "date": "July 14, 2015",
+        "content": "Most of us have more than one iOS device. Whether it's an iPhone and iPad, iPhone and Apple Watch, or...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "The Lessons of GamerGate",
+        "url": "/news/altconf-jean-macdonald-brianna-wu-aleen-simms-the-lessons-of-gamergate/",
+        "date": "July 14, 2015",
+        "content": "Jean MacDonald, Brianna Wu, Aleen Simms At AltConf 2014, Brianna Wu electrified the audience with her talk, Nine Ways To...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "A Digital Millenium Copyright Activity",
+        "url": "/news/altconf-jay-freeman-saurik-a-digital-millenium-copyright-activity/",
+        "date": "July 14, 2015",
+        "content": "Jay's talks look at a variety of subjects from the perspective of reverse engineering, everything from implementation and execution to...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Sysadmins and the Middle Way",
+        "url": "/news/altconf-jason-butler-sysadmins-and-the-middle-way/",
+        "date": "July 14, 2015",
+        "content": "Learning to walk the Middle Way, a constant process of compassionately yielding with whatever arises, has changed they way I...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "So, That Just Happened",
+        "url": "/news/altconf-james-dempsey-so-that-just-happened/",
+        "date": "July 14, 2015",
+        "content": "An easy-going look back at the announcements of WWDC 2015 and their possible implications. There may also be a bit...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "The Stylish Objective-C Developer's Guide to Swift",
+        "url": "/news/altconf-jaim-zuber-the-stylish-objective-c-developer-s-guide-to-swift/",
+        "date": "July 14, 2015",
+        "content": "You've browsed the Swift Language Docs or sat through a Swift 101 presentation. The next step? Building a production app....",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Paymenternationalization: Wild Ways International Users Buy Things",
+        "url": "/news/altconf-jack-flintermann-paymenternationalization-wild-ways-international-users-buy-things/",
+        "date": "July 14, 2015",
+        "content": "So, if you live outside the U.S., there are a lot of crazy ways to pay for stuff online! There's...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Writing a Technical Book - The Survival Guide",
+        "url": "/news/altconf-holden-karau-writing-a-technical-book-the-survival-guide/",
+        "date": "July 14, 2015",
+        "content": "Writing a technical book is generally viewed as a labor of love, since the economics of it tend to be...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "iMore Keynote Reaction Panel",
+        "url": "/news/altconf-guy-english-serenity-caldwell-rene-ritchie-peter-cohen-imore-keynote-reaction-panel/",
+        "date": "July 14, 2015",
+        "content": "Guy English, Serenity Caldwell, Rene Ritchie and Peter Cohen react to the keynote in this panel discusion.",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Building World-Class Product",
+        "url": "/news/altconf-greg-raiz-building-world-class-product/",
+        "date": "July 14, 2015",
+        "content": "It's more important than ever to build products that are great. This session will discuss what it takes to build...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "I Have No Idea What I'm Doing",
+        "url": "/news/altconf-graham-lee-i-have-no-idea-what-i-m-doing/",
+        "date": "July 14, 2015",
+        "content": "Handling the transition from a confused ObjC programmer to a confused Swift programmer.",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Successful Test-Driven Development on iOS",
+        "url": "/news/altconf-glen-tregoning-paul-zabelin-successful-test-driven-development-on-ios/",
+        "date": "July 14, 2015",
+        "content": "Test Driven Development on iOS has presented some challenges due to lack of tools and support from Apple. This talks...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Making an Indie Game? Do Your Own PR!",
+        "url": "/news/altconf-eli-hodapp-making-an-indie-game-do-your-own-pr/",
+        "date": "July 14, 2015",
+        "content": "Save cash and increase the impact of your game by doing your own PR. TouchArcade.com Editor-in-Chief, Eli Hodapp, details effective...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Legal Survival Kit",
+        "url": "/news/altconf-david-sparks-legal-survival-kit/",
+        "date": "July 14, 2015",
+        "content": "This session covers several tips from a seasoned business lawyer to help keep developers out of trouble and help them...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Accessibility Is a Moral Imperative",
+        "url": "/news/altconf-david-johnson-accessibility-is-a-moral-imperative/",
+        "date": "July 14, 2015",
+        "content": "The session will consist of stories, both personal and otherwise, of how iOS accessibility has changed the world for countless...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Designing for Humans",
+        "url": "/news/altconf-dave-wiskus-designing-for-humans/",
+        "date": "July 14, 2015",
+        "content": "Dave Wiskus explores the meaning of design and its impact on our lives, with a tour through the choices that...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Playgrounds Are Now for Kids",
+        "url": "/news/altconf-daniel-steinberg-playgrounds-are-now-for-kids/",
+        "date": "July 14, 2015",
+        "content": "Since their release, Playgrounds have provided a safe place for experienced developers to experiment with syntax, algorithms, and techniques in...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Why Did the Developer Cross the Road?",
+        "url": "/news/altconf-chris-lueck-why-did-the-developer-cross-the-road/",
+        "date": "July 14, 2015",
+        "content": "Inclusivity and the AltConf connection",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Functional Programming in Swift",
+        "url": "/news/altconf-chris-eidhof-functional-programming-in-swift/",
+        "date": "July 14, 2015",
+        "content": "I'll be talking about Functional Programming in Swift: what can we learn, and what are useful techniques we can apply...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Making Your Mobile Backend Work for You",
+        "url": "/news/altconf-chris-anderson-making-your-mobile-backend-work-for-you/",
+        "date": "July 14, 2015",
+        "content": "Great apps use powerful backend services to deliver a customized user experiences, but who wants to waste time building, deploying,...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Building in Success With Market-First Development",
+        "url": "/news/altconf-charles-perry-building-in-success-with-market-first-development/",
+        "date": "July 14, 2015",
+        "content": "With more competition than ever, it's harder than ever to build a product company that supports itself through App Store...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Designing With Cognitive Science in Mind",
+        "url": "/news/altconf-cesare-rocchi-designing-with-cognitive-science-in-mind/",
+        "date": "July 14, 2015",
+        "content": "What's faster for humans: searching by color or shape? Why do we notice small icons in the corner of screens?...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "250 Days Shipping With Swift and VIPER",
+        "url": "/news/altconf-brice-pollock-250-days-shipping-with-swift-and-viper/",
+        "date": "July 14, 2015",
+        "content": "Massive-View-Controller syndrome got you down? Experiencing increasing difficulty adding new features without breaking others? Learn how an architecture called VIPER...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Choose Your Character",
+        "url": "/news/altconf-brianna-wu-choose-your-character/",
+        "date": "July 14, 2015",
+        "content": "Tech feminist Brianna Wu has been a powerful voice for women in the game industry. Since being targeted by Gamergate,...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Swift Funtime",
+        "url": "/news/altconf-boris-bugling-swift-funtime/",
+        "date": "July 14, 2015",
+        "content": "This talk will quickly revisit what we loved about the Objective-C runtime and then explore if/how those things are possible...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Brew Your Own Cocoa (Framework)",
+        "url": "/news/altconf-billy-tobon-brew-your-own-cocoa-framework/",
+        "date": "July 14, 2015",
+        "content": "In this session, I will discuss how to design, implement, distribute, and use a Cocoa Frameworks. The talk would start...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Reactive UI on iOS - Just Tell Me What, Not How!",
+        "url": "/news/altconf-benjamin-loulier-reactive-ui-on-ios-just-tell-me-what-not-how/",
+        "date": "July 14, 2015",
+        "content": "At Facebook, we already created and use a very popular reactive UI library for the web: ReactJS. We have recently...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Safer Swift Code With Value Types",
+        "url": "/news/altconf-benjamin-encz-safer-swift-code-with-value-types/",
+        "date": "July 14, 2015",
+        "content": "New language, new programming paradigms. Since the release of Swift the Cocoa developer community is increasingly experimenting with functional programming....",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Hyper-Growth Panel",
+        "url": "/news/altconf-ben-sandofsky-john-adams-phil-fung-mohammad-shahanigian-tina-wen-hyper-growth-panel/",
+        "date": "July 14, 2015",
+        "content": "Ben Sandofsky, John Adams, Phil Fung, Mohammad Shahanigian, Tina Wen When you joined your startup, everyone fit at one lunch...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Functional Reactive Awesomeness With Swift",
+        "url": "/news/altconf-ash-furrow-functional-reactive-awesomeness-with-swift/",
+        "date": "July 14, 2015",
+        "content": "The history of functional reactive programming, ReactiveCocoa and the motivations behind its use as well as advanced concepts like MVVM...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Intro to Twitter Fabric",
+        "url": "/news/altconf-alex-singer-intro-to-twitter-fabric/",
+        "date": "July 14, 2015",
+        "content": "Twitter Fabric provides mobile app developers with a suite of SDKs to help build better apps. In this session, Alex...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "7 Ways to Enrich the Tech Industry",
+        "url": "/news/altconf-aleen-simms-7-ways-to-enrich-the-tech-industry/",
+        "date": "July 14, 2015",
+        "content": "It's no secret that the tech industry has a diversity problem. The LA Times recently stated that only 15% of...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Bottom-Up Programming in Swift",
+        "url": "/news/altconf-airspeed-velocity-bottom-up-programming-in-swift/",
+        "date": "July 14, 2015",
+        "content": "One of the strengths of Swift is its extensibility, that means that you can build up the language from small...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "What Haskell Teaches Me About Swift",
+        "url": "/news/altconf-abizer-nasir-what-haskell-teaches-me-about-swift/",
+        "date": "July 14, 2015",
+        "content": "I knew Haskell before Swift, and these are some of the things that I've been able to bring to writing...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "A Eulogy for Objective-C",
+        "url": "/news/altconf-aaron-hillegass-a-eulogy-for-objective-c/",
+        "date": "July 14, 2015",
+        "content": "A discussion of the purpose and history of Objective-C. Will include a look at how Swift continues that purpose while...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Closures in API Design",
+        "url": "/news/closures-api-design/",
+        "date": "July 09, 2015",
+        "content": "What are closures, and why should we start adding them into our code? HermÃ©s PiquÃ©, founder of Barcelona.IO &amp;amp; Robot...",
+        "image": "https://realm.io/assets/news/summit-hermes-cover.png"
+    },
+    {
+        "title": "Death by Indecision",
+        "url": "/news/alexsander-akers-death-by-indecision/",
+        "date": "July 09, 2015",
+        "content": "Working on a project requires you to make decisions about everything, from picking a language to write in, to choosing...",
+        "image": "https://realm.io/assets/news/summit-alexsander-cover.png"
+    },
+    {
+        "title": "Testing Realm Apps",
+        "url": "/news/tutorial-testing-realm-apps/",
+        "date": "July 07, 2015",
+        "content": "Today's blogpost is by Giovanni Lodi, a freelance iOS developer from Australia, and was originally published on his blog. You...",
+        "image": "https://realm.io/assets/news/tutorial-testing-realm-cover.png"
+    },
+    {
+        "title": "NEXTPETS! - Graphic T-shirts by Bandai",
+        "url": "/users/nextpets/",
+        "date": "July 07, 2015",
+        "content": "In our first year of shipping Realm, we've been absolutely thrilled at the wide variety of apps adopting our technology....",
+        "image": "https://realm.io/assets/cases/NPApphero.jpg"
+    },
+    {
+        "title": "Embracing Change with REST",
+        "url": "/news/kyle-fuller-embracing-change-with-rest/",
+        "date": "July 07, 2015",
+        "content": "Designing, implementing, and maintaining APIs for the Web today is more than a challenge - it has become an imperative....",
+        "image": "https://realm.io/assets/news/summit-kyle-cover.png"
+    },
+    {
+        "title": "Swift Scripting",
+        "url": "/news/swift-scripting/",
+        "date": "July 04, 2015",
+        "content": "Does Swift have a future in scripting? Let Ayaka Nonaka tell you how Swift became her scripting language of choice...",
+        "image": "https://realm.io/assets/news/summit-ayaka-cover.png"
+    },
+    {
+        "title": "State, Promises & Reactive&nbsp;Programming",
+        "url": "/news/state-promises-reactive-programming/",
+        "date": "July 02, 2015",
+        "content": "Promises are a well-known design pattern used to delay evaluation of future values, and to pipeline operations in an asynchronous...",
+        "image": "https://realm.io/assets/news/yasuhiro-reactive-cover.png"
+    },
+    {
+        "title": "Welcome Nabil Hachicha, Adam Fish, & Mulong&nbsp;Chen",
+        "url": "/news/nabil-adam-mulong-join-realm/",
+        "date": "June 30, 2015",
+        "content": "We're pleased to welcome Nabil Hachicha, Adam Fish, and Mulong Chen to the team! Meet Nabil Hachicha Nabil is an...",
+        "image": "https://realm.io/assets/news/welcome-nabil-fish-mulong.png"
+    },
+    {
+        "title": "Minwoo Park joins Realm",
+        "url": "/news/minwoo-park-joins-realm/",
+        "date": "June 30, 2015",
+        "content": "We're happy to announce that Minwoo Park has joined Realm and will be helping us from Seoul, Korea! Read on...",
+        "image": "https://realm.io/assets/news/minwoo-joins-cover.png"
+    },
+    {
+        "title": "Compelling Code",
+        "url": "/news/compelling-code/",
+        "date": "June 30, 2015",
+        "content": "How do you write code that other people want to use? Facebook's Brian Gesiak talks about two elements he finds...",
+        "image": "https://realm.io/assets/news/summit-brian-cover.png"
+    },
+    {
+        "title": "Realm support for Xcode 7, Swift 2.0, watchOS, & Bitcode",
+        "url": "/news/realm-support-xcode7-swift2-watchos-bitcode/",
+        "date": "June 29, 2015",
+        "content": "Just a quick update to let y'all know that Realm has been hard at work supporting the latest &amp;amp; greatest...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Using Flow & Mortar",
+        "url": "/news/using-flow-mortar/",
+        "date": "June 28, 2015",
+        "content": "Thorben Primke introduces Flow and Mortar, two Android libraries written by Square, at the Bay Area Android Dev Group. He...",
+        "image": "https://realm.io/assets/news/flow-mortar-cover.png"
+    },
+    {
+        "title": "Building Functional Apps",
+        "url": "/news/sam-soffes-building-functional-apps/",
+        "date": "June 27, 2015",
+        "content": "As things become more encapsulated &amp;amp; abstract, it becomes easier to reuse components. Sam Soffes, the man behind projects such...",
+        "image": "https://realm.io/assets/news/soffes-functional-cover.png"
+    },
+    {
+        "title": "Android Threading & Background Tasks",
+        "url": "/news/android-threading-background-tasks/",
+        "date": "June 24, 2015",
+        "content": "In Android, you shouldn't do anything that blocks the main thread. But what does that really mean? At a talk...",
+        "image": "https://realm.io/assets/news/android-ari-cover.png"
+    },
+    {
+        "title": "WWDC 2015 Swift Panel Discussion",
+        "url": "/news/apple-wwdc-2015-swift-panel-discussion/",
+        "date": "June 23, 2015",
+        "content": "During Apple's WWDC 2015, we were very happy to host a panel of leading voices from the Swift community. Reflecting...",
+        "image": "https://realm.io/assets/news/wwdc-panel-cover.png"
+    },
+    {
+        "title": "Realm Java 0.81.1",
+        "url": "/news/realm-java-0.81.1/",
+        "date": "June 21, 2015",
+        "content": "We just released a Realm Java update to this website and to Maven. This release includes Kotlin support, new library...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "(Functional) Programming for Everyone",
+        "url": "/news/swift-summit-daniel-steinberg-functional-programming-for-everyone/",
+        "date": "June 19, 2015",
+        "content": "One of the grandest ambitions for Swift is the transformation of programming education. After being open sourced, Swift will run...",
+        "image": "https://realm.io/assets/news/summit-steinberg-cover.png"
+    },
+    {
+        "title": "Extracurricular Swift",
+        "url": "/news/swift-summit-sally-shepard-extracurricular-swift-programming-education/",
+        "date": "June 19, 2015",
+        "content": "Swift is praised by many developers, but it also opens up exciting opportunities in education. In this talk, Sally Shepard...",
+        "image": "https://realm.io/assets/news/summit-sally-cover.png"
+    },
+    {
+        "title": "Taylor: The Most Un-Googleable Swift Library",
+        "url": "/news/swift-summit-jorge-izquierdo-taylor-http-server-library/",
+        "date": "June 19, 2015",
+        "content": "There are many programming topics that developers are familiar with, but don't truly understand. As an example in self education,...",
+        "image": "https://realm.io/assets/news/summit-jorge-cover.png"
+    },
+    {
+        "title": "Get Your Popcorn Ready! It's AltConf Live Stream Time!",
+        "url": "/news/altconf-live-stream/",
+        "date": "June 05, 2015",
+        "content": "We're super happy to partner with AltConf, a community-driven event for developers held alongside Apple's WWDC, June 8 - 12,...",
+        "image": "https://realm.io/assets/news/altconf-time-cover.png"
+    },
+    {
+        "title": "CryptoSwift:  Cryptography You Can Do",
+        "url": "/news/swift-summit-marcin-krzyzanowski-cryptoswift-cryptography/",
+        "date": "June 05, 2015",
+        "content": "Cryptography is the ancient science of writing in secret code, and of course, for centuries writing meant pen and paper....",
+        "image": "https://realm.io/assets/news/summit-marcin-cover.png"
+    },
+    {
+        "title": "Swift Funtime",
+        "url": "/news/swift-summit-boris-bugling-runtime-funtime/",
+        "date": "June 05, 2015",
+        "content": "We love the Objective-C runtime for three main reasons: dynamic introspection, behavior changing, and the ability to analyze private APIs....",
+        "image": "https://realm.io/assets/news/summit-boris-cover.png"
+    },
+    {
+        "title": "JSON, Swift, and Type Safety: It's a wrap",
+        "url": "/news/swift-summit-anthony-levings-json-type-safety/",
+        "date": "June 05, 2015",
+        "content": "JSON parsing has been a persistent challenge for Swift developers. In the first six months of Swift's release, perhaps more...",
+        "image": "https://realm.io/assets/news/summit-anthony-cover.png"
+    },
+    {
+        "title": "Swift Panel: Where do we go from here?",
+        "url": "/news/swift-summit-panel-community-where-do-we-go/",
+        "date": "June 02, 2015",
+        "content": "Recorded on the last day of Swift Summit, and released in time for Swift's 1st birthday, Kyle Fuller, Jack Nutting,...",
+        "image": "https://realm.io/assets/news/summit-sunday-cover.png"
+    },
+    {
+        "title": "The Future Belongs to the Young",
+        "url": "/news/swift-summit-jack-nutting-future-belongs-to-the-young/",
+        "date": "June 02, 2015",
+        "content": "Only one year old, Swift is still very much a young language. It is often said that the future belongs...",
+        "image": "https://realm.io/assets/news/summit-jack-cover.png"
+    },
+    {
+        "title": "Swift, Meet Objective-C",
+        "url": "/news/swift-summit-daniel-tomlinson-meet-objective-c/",
+        "date": "June 02, 2015",
+        "content": "Swift is here to stay, but Objective-C is not going to fade away quickly. Many developers have existing codebases, but...",
+        "image": "https://realm.io/assets/news/summit-daniel-cover.png"
+    },
+    {
+        "title": "Morgan Evetts joins Realm",
+        "url": "/news/morgan-evetts-joins-realm/",
+        "date": "June 02, 2015",
+        "content": "We're delighted to announce that Morgan Evetts has joined Realm. He will be helping us from London, England! Morgan Evetts...",
+        "image": "https://realm.io/assets/news/morgan-joins-cover.png"
+    },
+    {
+        "title": "Functional View Controllers: An Experiment",
+        "url": "/news/swift-summit-chris-eidhof-functional-view-controllers/",
+        "date": "May 29, 2015",
+        "content": "We tightly couple our view controllers to data models, networking, and the next view controller. Are there ways to avoid...",
+        "image": "https://realm.io/assets/news/summit-chris-cover.png"
+    },
+    {
+        "title": "The Type System is Your Friend",
+        "url": "/news/swift-summit-johannes-weiss-the-type-system-is-your-friend/",
+        "date": "May 29, 2015",
+        "content": "Swift is strongly typed, but how do we use this to our advantage? In this talk, Johannes WeiÃŸ shows us...",
+        "image": "https://realm.io/assets/news/summit-johannes-cover.png"
+    },
+    {
+        "title": "What Haskell Taught Me About Writing Swift",
+        "url": "/news/swift-summit-abizer-nasir-lessons-from-haskell/",
+        "date": "May 29, 2015",
+        "content": "Unfamiliarity is often mistaken for complexity. In this talk, Abizer Nasir explains why a little knowledge of Haskell helps us...",
+        "image": "https://realm.io/assets/news/summit-abizer-cover.png"
+    },
+    {
+        "title": "Unsafe Swift: For Fun & Profit",
+        "url": "/news/russ-bishop-unsafe-swift/",
+        "date": "May 27, 2015",
+        "content": "One of the main stated goals of Swift is safety. You can see it reflected in the design of String,...",
+        "image": "https://realm.io/assets/news/russ-unsafe-cover.png"
+    },
+    {
+        "title": "Realm Objective-C & Swift 0.93",
+        "url": "/news/realm-objc-swift-0.93/",
+        "date": "May 27, 2015",
+        "content": "We just pushed Realm Objective-C and Realm Swift updates to this website, and to CocoaPods. This release fixes several Swift-related...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Swift All-Star Panel",
+        "url": "/news/swift-summit-all-star-panel-discussion-eidhof-gesiak-ayaka-airspeed/",
+        "date": "May 26, 2015",
+        "content": "Recorded at Swift Summit in London, Brian Gesiak, Chris Eidhof, Ayaka Nonaka, and Airspeed Velocity sit down with Colin Eberhardt...",
+        "image": "https://realm.io/assets/news/summit-panel-cover.png"
+    },
+    {
+        "title": "Testing in Swift",
+        "url": "/news/swift-summit-jan-riehn-testing/",
+        "date": "May 26, 2015",
+        "content": "Swift promises us the best from both imperative and functional languages, but this will affect the way we test our...",
+        "image": "https://realm.io/assets/news/summit-jan-cover.png"
+    },
+    {
+        "title": "Debugging in Swift: How Hard Can It Be?",
+        "url": "/news/swift-summit-carola-nitz-debugging/",
+        "date": "May 26, 2015",
+        "content": "Why is debugging in Swift so much more frustrating than debugging in Objective-C? Expanding on her recent experience of using...",
+        "image": "https://realm.io/assets/news/summit-carola-cover.png"
+    },
+    {
+        "title": "How Swift is Swift?",
+        "url": "/news/swift-summit-joseph-lord-performance/",
+        "date": "May 22, 2015",
+        "content": "Exactly how Swift is Swift? The language was designed for speed, but looking at comparisons, there are obvious places where...",
+        "image": "https://realm.io/assets/news/summit-joseph-cover.png"
+    },
+    {
+        "title": "Zero-Cost Abstractions",
+        "url": "/news/swift-summit-airspeed-velocity-zero-cost-abstractions/",
+        "date": "May 22, 2015",
+        "content": "We're very happy to present Airspeed Velocity, the nom de plume behind the eponymous, and highly regarded Swift blog. In...",
+        "image": "https://realm.io/assets/news/summit-airspeed-cover.png"
+    },
+    {
+        "title": "The Supercomputer In Your Pocket: Metal & Swift",
+        "url": "/news/swift-summit-simon-gladman-metal/",
+        "date": "May 22, 2015",
+        "content": "Join Simon Gladman as he talks about Metal, Apple's iOS framework for GPU programming. We explore how to implement Metal...",
+        "image": "https://realm.io/assets/news/summit-simon-cover.png"
+    },
+    {
+        "title": "Inter-Process Notifications on iOS",
+        "url": "/news/thomas-goyne-fast-inter-process-communication/",
+        "date": "May 20, 2015",
+        "content": "As part of our ongoing efforts to document engineering challenges at Realm, this is an account of our recent work...",
+        "image": "https://realm.io/assets/news/inter-process-cover.png"
+    },
+    {
+        "title": "Back to the Futures",
+        "url": "/news/swift-summit-javier-soto-futures/",
+        "date": "May 19, 2015",
+        "content": "The asynchronous code we're used to writing in Objective-C has a lot of problems. It's not great for handling errors,...",
+        "image": "https://realm.io/assets/news/summit-javi-cover.png"
+    },
+    {
+        "title": "ReactiveCocoa and Swift: Better Together",
+        "url": "/news/swift-summit-colin-eberhardt-reactivecocoa/",
+        "date": "May 19, 2015",
+        "content": "This talk is a love story, about the coming together of an elegant concept and a beautiful language. Colin Eberhardt...",
+        "image": "https://realm.io/assets/news/summit-colin-cover.png"
+    },
+    {
+        "title": "The Monad Among Us",
+        "url": "/news/swift-summit-al-skipp-monads/",
+        "date": "May 19, 2015",
+        "content": "The concept of \"nil\" does not exist in Swift (despite the existence of the keyword nil!). But a language that...",
+        "image": "https://realm.io/assets/news/summit-al-cover.png"
+    },
+    {
+        "title": "Mark Rowe joins Realm",
+        "url": "/news/mark-rowe-joins-realm/",
+        "date": "May 18, 2015",
+        "content": "We're delighted to announce that Mark Rowe has joined Realm, and will be helping us from Lakeport, California! Mark Rowe...",
+        "image": "https://realm.io/assets/news/mark-rowe-joins-realm.png"
+    },
+    {
+        "title": "Wwdc Brunch Meetup",
+        "url": "/news/WWDC-brunch-meetup/",
+        "date": "May 13, 2015",
+        "content": "Coming to San Francisco for Apple's WWDC? You should stop by Realm's WWDC Brunch Meetup, Friday June 12, 11am at...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Using Core Data in Swift",
+        "url": "/news/jesse-squires-core-data-swift/",
+        "date": "May 12, 2015",
+        "content": "Core Data is a framework of great power, but it often comes with great frustration. Nevertheless, it remains a popular...",
+        "image": "https://realm.io/assets/news/core-data-swift.png"
+    },
+    {
+        "title": "Introducing Realm Swift (& Realm Objective-C 0.92)",
+        "url": "/news/introducing-realm-swift/",
+        "date": "May 07, 2015",
+        "content": "Earlier this week, we soft-launched what should have been Realm Cocoa 0.92. Instead, this release brings bigger changes. After months...",
+        "image": "https://realm.io/assets/news/swift-release-cover.png"
+    },
+    {
+        "title": "Android App Indexing",
+        "url": "/news/juan-gomez-android-app-indexing/",
+        "date": "May 02, 2015",
+        "content": "You've worked really hard to create a great Android app, building a better viewing experience for your content on mobile....",
+        "image": "https://realm.io/assets/news/app-indexing.png"
+    },
+    {
+        "title": "More WatchKit Mistakes",
+        "url": "/news/more-watchkit-mistakes/",
+        "date": "April 29, 2015",
+        "content": "A sequel to \"My Biggest WatchKit Mistake\", we asked a few more of our friends to share the most useful...",
+        "image": "https://realm.io/assets/news/more-watchkit-mistakes.png"
+    },
+    {
+        "title": "Realm Cocoa 0.91.5",
+        "url": "/news/realm-cocoa-0.91.5/",
+        "date": "April 28, 2015",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. This release fixes a bug which could...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Ruthlessly Simple Dependency Management with Carthage",
+        "url": "/news/swift-dependency-management-with-carthage/",
+        "date": "April 23, 2015",
+        "content": "Carthage is a new dependency manager for Objective-C and Swift projects, intended to be the simplest way to add frameworks...",
+        "image": "https://realm.io/assets/news/dependency-management-carthage.png"
+    },
+    {
+        "title": "My Biggest WatchKit Mistake",
+        "url": "/news/watchkit-mistakes/",
+        "date": "April 21, 2015",
+        "content": "To celebrate the arrival of the Apple Watch, we asked a few of our friends to share the most useful...",
+        "image": "https://realm.io/assets/news/watchkit-mistakes.png"
+    },
+    {
+        "title": "Writing Android Libraries",
+        "url": "/news/writing-android-libraries/",
+        "date": "April 16, 2015",
+        "content": "At some point as a developer you'll consider writing a library, whether to perform a specific task, modularize your code-base,...",
+        "image": "https://realm.io/assets/news/writing-android-libraries.png"
+    },
+    {
+        "title": "Tutorial: Sharing Data between WatchKit & your App, with Realm",
+        "url": "/news/tutorial-sharing-data-between-watchkit-and-your-app/",
+        "date": "April 13, 2015",
+        "content": "Today's blogpost is contributed by one of our users: Andrea Mazzini, and originally appeared on his blog. Andrea is cofounder...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Testing in Swift",
+        "url": "/news/testing-in-swift/",
+        "date": "April 08, 2015",
+        "content": "Software tests are great for verifying software behavior and improving the quality of your code. In this talk, we learn...",
+        "image": "https://realm.io/assets/news/testing-swift.png"
+    },
+    {
+        "title": "Natural Language Processing with Swift",
+        "url": "/news/natural-language-processing-with-swift/",
+        "date": "April 04, 2015",
+        "content": "Apple has offered an API for natural language processing since iOS 5, which allowed us to tokenize text, detect the...",
+        "image": "https://realm.io/assets/news/natural-language-processing-with-swift.png"
+    },
+    {
+        "title": "Think Different",
+        "url": "/news/saul-mora-think-different/",
+        "date": "March 31, 2015",
+        "content": "Author of Magical Record and current Coursera iOS engineer Saul Mora gives his analysis of the history of programming and...",
+        "image": "https://realm.io/assets/news/saul-mora-think-different.png"
+    },
+    {
+        "title": "9 Months",
+        "url": "/news/9-months/",
+        "date": "March 24, 2015",
+        "content": "tl;dr: after just 9 months, Realm is now running on well over 100M devices around the world and powers the...",
+        "image": "https://realm.io/assets/news/9-months.png"
+    },
+    {
+        "title": "Sf Drinkup Sneakpeek",
+        "url": "/news/sf-drinkup-sneakpeek/",
+        "date": "March 19, 2015",
+        "content": "If you are in San Francisco, you should absolutely join us for a drink with the entire Realm team +...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Tim Oliver joins Realm",
+        "url": "/news/tim-oliver-joins-realm/",
+        "date": "March 11, 2015",
+        "content": "We're happy to announce that Tim Oliver has joined Realm and will be helping us from Perth, Western Australia! Tim...",
+        "image": "https://realm.io/assets/news/tim-oliver-joins-realm.png"
+    },
+    {
+        "title": "Realm Java 0.80.0",
+        "url": "/news/realm-java-0.80.0/",
+        "date": "March 11, 2015",
+        "content": "We just released a Realm Java update to this website and to Maven. This release includes support for static fields,...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.91",
+        "url": "/news/realm-cocoa-0.91.0/",
+        "date": "March 10, 2015",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here's what's new! Sharing Realms Between Processes...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Architecting Your App for the Apple Watch",
+        "url": "/news/architecting-app-apple-watch-natashatherobot/",
+        "date": "March 05, 2015",
+        "content": "The highly anticipated Apple Watch opens up a rare opportunity to be one of the first developers on a new...",
+        "image": "https://realm.io/assets/news/natashatherobot-applewatch.png"
+    },
+    {
+        "title": "NSPredicate Cheatsheet",
+        "url": "/news/nspredicate-cheatsheet/",
+        "date": "March 04, 2015",
+        "content": "Download the PDF Version supported by Realm Format string summary @&quot;attributeName == %@&quot; object's attributeName value is equal to value...",
+        "image": "https://realm.io/assets/news/nspredicate-cheatsheet-cover.png"
+    },
+    {
+        "title": "Katsumi Kishikawa joins Realm",
+        "url": "/news/katsumi-kishikawa-joins-realm/",
+        "date": "March 03, 2015",
+        "content": "We're happy to announce that Katsumi Kishikawa has joined Realm and will be helping us from Tokyo, Japan! Read on...",
+        "image": "https://realm.io/assets/news/katsumi-joins-realm2.png"
+    },
+    {
+        "title": "Using Realm with RxJava",
+        "url": "/news/using-realm-with-rxjava/",
+        "date": "March 02, 2015",
+        "content": "Today's blogpost is contributed by one of our users: Kirill Boyarshinov, and originally appeared on his blog. Kirill is the...",
+        "image": "https://realm.io/assets/news/using-realm-with-rxjava.png"
+    },
+    {
+        "title": "The Making of Falcon Pro 3",
+        "url": "/news/joaquim-verges-making-falcon-pro-3/",
+        "date": "February 24, 2015",
+        "content": "Falcon Pro 3 is the much anticipated rewrite of one of the most popular Twitter apps in Android history. In...",
+        "image": "https://realm.io/assets/news/joaquim-verges-making-falcon-pro-3.png"
+    },
+    {
+        "title": "Building WatchKit Apps in Swift",
+        "url": "/news/building-watchkit-apps-swift/",
+        "date": "February 19, 2015",
+        "content": "The Apple Watch is coming this spring, and WatchKit is the SDK that allows us to build apps for it....",
+        "image": "https://realm.io/assets/news/building-watchkit-apps-swift.png"
+    },
+    {
+        "title": "Reducing your Android APK size When Using Native Libraries",
+        "url": "/news/reducing-apk-size-native-libraries/",
+        "date": "February 16, 2015",
+        "content": "Every now and then, we hear from users concerned about the size Realm's native libraries add to their app. With...",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Realm Java 0.79.0",
+        "url": "/news/realm-java-0.79.0/",
+        "date": "February 16, 2015",
+        "content": "We recently released a Realm Java update to this website and to Maven. This release includes support for primary keys,...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Github grep",
+        "url": "/news/github-grep-feb-2015/",
+        "date": "February 13, 2015",
+        "content": "Here are some of the cool open-source projects built with Realm that appeared recently on Github! Realm Object Editor Defining...",
+        "image": "https://realm.io/assets/news/recent-projects-using-realm.png"
+    },
+    {
+        "title": "Controlling Complexity in Swift or Making Friends with Value Types",
+        "url": "/news/andy-matuschak-controlling-complexity/",
+        "date": "February 11, 2015",
+        "content": "People tell you that you're supposed to avoid mutable state, but how can anything happen if you never call a...",
+        "image": "https://realm.io/assets/news/andy-matuschak-complexity.png"
+    },
+    {
+        "title": "Designing for Motion with Android",
+        "url": "/news/android-designing-for-motion/",
+        "date": "February 05, 2015",
+        "content": "We were delighted to host a meetup of the Bay Area Android Developer Group, featuring a talk by local designer...",
+        "image": "https://realm.io/assets/news/designing-for-motion.png"
+    },
+    {
+        "title": "Tiny Networking: Building Micro-Libraries in Swift",
+        "url": "/news/chris-eidhof-micro-libraries-swift/",
+        "date": "January 28, 2015",
+        "content": "We were thrilled to welcome back Chris Eidhof of objc.io &amp;amp; UIKonf fame to the Swift meetup. In his previous...",
+        "image": "https://realm.io/assets/news/tiny-networking-swift.png"
+    },
+    {
+        "title": "Andreas & Florian on Gutefrage",
+        "url": "/users/gutefrage/",
+        "date": "January 26, 2015",
+        "content": "Have a question? If you live in Germany, Gutefrage will help you find the answer. Gutefrage is a wildly successful...",
+        "image": "https://realm.io/assets/cases/GFApphero.jpg"
+    },
+    {
+        "title": "Realm Java 0.78",
+        "url": "/news/realm-java-0.78/",
+        "date": "January 22, 2015",
+        "content": "We just pushed a Realm Java update to this website and to JCenter. This week another highly requested feature reached...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.90",
+        "url": "/news/realm-cocoa-0.90.0/",
+        "date": "January 21, 2015",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here's what's new! Per-path Schema Migrations Schema...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Furkan on Flows",
+        "url": "/users/flows/",
+        "date": "January 19, 2015",
+        "content": "Furkan Cengiz is an iOS developer from Istanbul and the creator of Flows, a new app that enables people to...",
+        "image": "https://realm.io/assets/cases/FLApphero.jpg"
+    },
+    {
+        "title": "Realm Java 0.77",
+        "url": "/news/realm-java-0.77/",
+        "date": "January 16, 2015",
+        "content": "We just pushed a Realm Java update to this website and to JCenter. In this release we introduce a lovely...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Mine Rejser",
+        "url": "/users/mine-rejser/",
+        "date": "January 15, 2015",
+        "content": "When Bo Frese grew frustrated with the mobile options offered by Denmark's public transportation network, he did what any enterprising...",
+        "image": "https://realm.io/assets/cases/MRApphero.jpg"
+    },
+    {
+        "title": "Building Modular iOS Apps",
+        "url": "/news/modular-ios-apps/",
+        "date": "January 12, 2015",
+        "content": "Service oriented architecture is common for server-side development and it's great because it breaks up the functionality into logical...",
+        "image": "https://realm.io/assets/news/building-modular-apps.png"
+    },
+    {
+        "title": "Pedro on 8fit",
+        "url": "/users/8fit/",
+        "date": "January 10, 2015",
+        "content": "We know Pedro PiÃ±era because he's been helping us with our Spanish documentation (for Cocoa and Java), but he also...",
+        "image": "https://realm.io/assets/cases/8FApphero.jpg"
+    },
+    {
+        "title": "Matt, Taylor, and Emily on Spruce",
+        "url": "/users/spruce/",
+        "date": "January 09, 2015",
+        "content": "MotionMobs is a technology firm based in Birmingham, Alabama, and the developer of Spruce, a platform that allows businesses to...",
+        "image": "https://realm.io/assets/cases/SPApphero.jpg"
+    },
+    {
+        "title": "Samuel E. Giddins & Marius Rackwitz join Realm",
+        "url": "/news/samuel-giddins-marius-rackwitz-join-realm/",
+        "date": "January 07, 2015",
+        "content": "We're starting 2015 right by expanding our 16-person team with 2 additions: Samuel E. Giddins &amp;amp; Marius Rackwitz. Both of...",
+        "image": "https://realm.io/assets/news/welcome-sam-marius.png"
+    },
+    {
+        "title": "An Introduction to 3D Graphics with Metal in Swift",
+        "url": "/news/3d-graphics-metal-swift/",
+        "date": "January 07, 2015",
+        "content": "Warren Moore, a former Apple engineer, recently stopped by the Swift Language User Group to give an introduction to 3D...",
+        "image": "https://realm.io/assets/news/basics-of-metal.png"
+    },
+    {
+        "title": "Rasmus on Type Nine",
+        "url": "/users/typenine/",
+        "date": "December 29, 2014",
+        "content": "We were really excited to talk with Rasmus Porsager, the creator of Type Nine, not only because his app has...",
+        "image": "https://realm.io/assets/cases/TNApphero.png"
+    },
+    {
+        "title": "2014 Roundup: 25 Realm Resources and Tutorials",
+        "url": "/news/top-realm-resources/",
+        "date": "December 29, 2014",
+        "content": "Whether you're new to Realm or a Realm wizard, there'll be something for you on our list of top 25...",
+        "image": "https://realm.io/assets/news/realm-resources-tutorials-cover.png"
+    },
+    {
+        "title": "Thomas of Politi",
+        "url": "/users/politi/",
+        "date": "December 27, 2014",
+        "content": "Thomas Andersen is the senior application developer for Denmark's police force, Politi. Here he shares what they're doing to reach...",
+        "image": "https://realm.io/assets/cases/POApphero.jpg"
+    },
+    {
+        "title": "Top 5 Swift Meetup Videos of 2014",
+        "url": "/news/top-5-swift-videos-of-2014/",
+        "date": "December 23, 2014",
+        "content": "To celebrate the end of 2014, we're pleased to present the most-viewed Swift videos from the Swift Language User Group...",
+        "image": "https://realm.io/assets/news/favorite-meetup-videos-cover.jpg"
+    },
+    {
+        "title": "Realm Java 0.76",
+        "url": "/news/realm-java-0.76/",
+        "date": "December 19, 2014",
+        "content": "We just pushed a Realm Java update to this website and to JCenter. In this release we introduce some preliminary...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.89",
+        "url": "/news/realm-cocoa-0.89.0/",
+        "date": "December 18, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here's what's new! Encryption We've added support...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Favorite Swift Tips & Tricks of 2014",
+        "url": "/news/favorite-swift-tips-and-tricks-of-2014/",
+        "date": "December 18, 2014",
+        "content": "To celebrate the end of the year and the first 6 months of Swift, we asked ten of our Swift-est...",
+        "image": "https://realm.io/assets/news/favorite-tips-cover.jpg"
+    },
+    {
+        "title": "The 12 Apps of Swiftmas",
+        "url": "/news/the-12-apps-of-swiftmas/",
+        "date": "December 12, 2014",
+        "content": "For the holiday season, we held a special meetup featuring the 12 Apps of Swiftmas! We hand-picked 12 Swift projects...",
+        "image": "https://realm.io/assets/news/12-apps-cover.jpg"
+    },
+    {
+        "title": "Shrimp Keyboard",
+        "url": "/users/ixhiamy-keyboard/",
+        "date": "December 11, 2014",
+        "content": "Evan Chu is the creator and developer of Ixhiamy Keyboard, an iOS 8 Keyboard aimed at Chinese &amp;amp; Japanese speakers....",
+        "image": "https://realm.io/assets/cases/IXApphero.jpg"
+    },
+    {
+        "title": "How iComics Switched from Core Data to Realm in One Evening",
+        "url": "/news/how-icomics-switched-to-realm-in-one-evening/",
+        "date": "December 11, 2014",
+        "content": "Tim Oliver, creator of the iComics app, gave a talk featuring Realm in his project at the Perth iOS Meetup....",
+        "image": "https://realm.io/assets/news/icomics-switch-cover.png"
+    },
+    {
+        "title": "Tim of iComics",
+        "url": "/users/icomics/",
+        "date": "December 10, 2014",
+        "content": "When we discovered that Tim Oliver, the creator and developer of the comic book app iComics, chose to migrate to...",
+        "image": "https://realm.io/assets/cases/ICApphero.jpg"
+    },
+    {
+        "title": "Realm Java 0.75",
+        "url": "/news/realm-java-0.75/",
+        "date": "December 04, 2014",
+        "content": "We recently released a Realm Java update to this website and to Maven. This release is a big one! Based...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Jpsim Multipeer Objcio",
+        "url": "/news/jpsim-multipeer-objcio/",
+        "date": "December 03, 2014",
+        "content": "Our own JP Simard wrote an article about multipeer connectivity for the latest issue of objc.io!",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "The 12 Days of Swiftmas",
+        "url": "/news/the-12-days-of-swiftmas/",
+        "date": "December 02, 2014",
+        "content": "[Sing along to the tune of The 12 Days of Christmas] On the first day of Swiftmas, Chris Lattner sent...",
+        "image": "https://realm.io/assets/news/12-days-swiftmas-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.88",
+        "url": "/news/realm-cocoa-0.88.0/",
+        "date": "December 02, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here's what's new! LLDB Support Script Our...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Swift for Command-Line Tools",
+        "url": "/news/swift-for-CLI/",
+        "date": "November 29, 2014",
+        "content": "Marin Usalji, creator of Alcatraz, xcpretty and ObjectiveRecord gave a great talk about using Swift for CLI tools at the...",
+        "image": "https://realm.io/assets/news/swift-cli-cover.png"
+    },
+    {
+        "title": "Check out our users!",
+        "url": "/news/realm-users-page/",
+        "date": "November 24, 2014",
+        "content": "Want to know who is using Realm and how? Check out our new Users page!",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Realm Java 0.74",
+        "url": "/news/realm-java-0.74.0/",
+        "date": "November 20, 2014",
+        "content": "We just released a Realm Java update to this website and to Maven. Now with more naming conventions in model...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.87.4",
+        "url": "/news/realm-cocoa-0.87.4/",
+        "date": "November 10, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here’s what’s new! Inverse Relationships It's now...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Adam on Breezeworks",
+        "url": "/users/breezeworks/",
+        "date": "November 10, 2014",
+        "content": "Adam Block is the co-founder and CTO of Breezeworks, an app for service professionals providing everything from scheduling and customer...",
+        "image": "https://realm.io/assets/cases/BWApphero.jpg"
+    },
+    {
+        "title": "Realm Java 0.73",
+        "url": "/news/realm-java-0.73/",
+        "date": "November 05, 2014",
+        "content": "We just released a Realm Java update to this website and to Maven. It includes bug fixes, refactoring, and a...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Sebastian on Beanflow",
+        "url": "/users/beanflow/",
+        "date": "November 03, 2014",
+        "content": "For our next interview, we spoke to Sebastian Dobrincu, a freelance iOS developer living in Bucharest, Romania. Currently Sebastian is...",
+        "image": "https://realm.io/assets/cases/BFApphero.jpg"
+    },
+    {
+        "title": "Simon on Thermodo",
+        "url": "/users/thermodo/",
+        "date": "November 01, 2014",
+        "content": "We’ve been a fan of the small Danish software company Robocat for some time now, and if the response to...",
+        "image": "https://realm.io/assets/cases/THApphero.jpg"
+    },
+    {
+        "title": "Realm Java 0.72",
+        "url": "/news/realm-java-0.72.0/",
+        "date": "October 27, 2014",
+        "content": "We just released a Realm Java update to this website and to Maven. It includes support for Eclipse, Link Queries,...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Realm now has an RSS feed",
+        "url": "/news/realm-rss-feed/",
+        "date": "October 25, 2014",
+        "content": "Realm now has an RSS feed for all news articles. Enjoy!",
+        "image": "https://realm.io"
+    },
+    {
+        "title": "Swift and Objective-C: Best Friends Forever?",
+        "url": "/news/swift-objc-best-friends-forever/",
+        "date": "October 24, 2014",
+        "content": "We were pleased to welcome Jonathan Blocksom at our SLUG meetup. A seasoned industry veteran, Jonathan has the real world...",
+        "image": "https://realm.io/assets/news/blocksom-cover.jpg"
+    },
+    {
+        "title": "Realm Cocoa 0.87",
+        "url": "/news/realm-cocoa-0.87.0/",
+        "date": "October 21, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here’s what’s new! RLMResults RLMArray has been...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Paw on Remedic",
+        "url": "/users/remedic/",
+        "date": "October 15, 2014",
+        "content": "We always feel super lucky to have users who are so supportive of our product. Paw Dethlefsen is one such...",
+        "image": "https://realm.io/assets/cases/REApphero.jpg"
+    },
+    {
+        "title": "Realm Java 0.71",
+        "url": "/news/realm-java-0.71.0/",
+        "date": "October 10, 2014",
+        "content": "You asked for it. Now you got it! Version 0.71.0 of Realm for Java fixes an important issue first reported...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Robera of Deliberate Practice",
+        "url": "/users/deliberate-practice/",
+        "date": "October 07, 2014",
+        "content": "In the first of a new series where we connect one-on-one with Realm users, we spoke to Robera Geleta, creator...",
+        "image": "https://realm.io/assets/cases/DPApphero.jpg"
+    },
+    {
+        "title": "Realm Cocoa 0.86",
+        "url": "/news/realm-cocoa-0.86.0/",
+        "date": "October 03, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here’s what’s new! Inheritance You can now...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Basilis on Anagram Solver",
+        "url": "/users/anagram-solver/",
+        "date": "October 02, 2014",
+        "content": "When we announced our Android launch at the end of September, we couldn't wait to see what new projects developers...",
+        "image": "https://realm.io/assets/cases/ASApphero.jpg"
+    },
+    {
+        "title": "Seth of Cloth",
+        "url": "/users/cloth/",
+        "date": "October 01, 2014",
+        "content": "In our second installment of interviews, we spoke to Seth Hein, lead iOS developer at Cloth. Described by The Next...",
+        "image": "https://realm.io/assets/cases/CLApphero.jpg"
+    },
+    {
+        "title": "Realm for Android",
+        "url": "/news/realm-for-android/",
+        "date": "September 30, 2014",
+        "content": "tl;dr: after attracting over 20,000 developers on iOS in 8 weeks, we're launching Realm for Android today! It looks like...",
+        "image": "https://realm.io/assets/news/java-release-cover.png"
+    },
+    {
+        "title": "Building TableViews in Swift & iOS8",
+        "url": "/news/building-tableviews-swift-ios8/",
+        "date": "September 24, 2014",
+        "content": "Last time at SLUG, we were excited to welcome NatashaTheRobot at our latest meetup, graciously hosted by Eventbrite. TableViews are...",
+        "image": "https://realm.io/assets/news/building-tableviews-cover.png"
+    },
+    {
+        "title": "Swift for Rubyists",
+        "url": "/news/swift-for-rubyists/",
+        "date": "September 18, 2014",
+        "content": "We welcomed back JP Simard to speak at one of our recent SLUG meetups, graciously hosted by Iron.io and Heavybit!...",
+        "image": "https://realm.io/assets/news/swift-for-rubyists-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.85",
+        "url": "/news/realm-0.85.0/",
+        "date": "September 15, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here’s what’s new! Primary Keys Realm now...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Functional Programming in Swift",
+        "url": "/news/functional-programming-swift-chris-eidhof/",
+        "date": "September 11, 2014",
+        "content": "Chris Eidhof is the author of the upcoming book Functional Programming in Swift, co-creator of objc.io and organizer of UIKonf....",
+        "image": "https://realm.io/assets/news/functional-swift-cover.png"
+    },
+    {
+        "title": "Converting Objective-C to Swift",
+        "url": "/news/converting-objc-to-swift/",
+        "date": "September 09, 2014",
+        "content": "Soon after Swift came out David Kobilnyk set out on an interesting quest: to convert all the Objective-C code samples...",
+        "image": "https://realm.io/assets/news/converting-objc-swift-cover.png"
+    },
+    {
+        "title": "Time to write some bad code",
+        "url": "/news/time-to-write-some-bad-code/",
+        "date": "September 08, 2014",
+        "content": "So: My wife hates snowboarding because she's a good skier. She's far sportier than me, and no doubt would be...",
+        "image": "https://realm.io/assets/news/write-bad-code-cover.png"
+    },
+    {
+        "title": "Tutorial: Building a To-Do App with Realm",
+        "url": "/news/tutorial-building-a-todo-app-with-realm/",
+        "date": "September 05, 2014",
+        "content": "Today's blogpost is contributed by one of our users: Piet Brauer, who gave a talk about Realm at his local...",
+        "image": "https://realm.io/assets/news/building-todo-app-cover.png"
+    },
+    {
+        "title": "Swift: Enums, Pattern Matching & Generics",
+        "url": "/news/swift-enums-pattern-matching-generics/",
+        "date": "September 02, 2014",
+        "content": "The Swift Language User Group meetup held on August 21st had a very special guest: Chris Lattner, the creator of...",
+        "image": "https://realm.io/assets/news/swift-enums-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.84",
+        "url": "/news/realm-0.84.0/",
+        "date": "August 28, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here’s what’s new! API breaking changes The...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Lessons Learned Building 2048 in Swift",
+        "url": "/news/swift-2048/",
+        "date": "August 06, 2014",
+        "content": "The second Silicon Valley Swift Language User Group meetup on July 24th featured Austin Zheng. This talk focused on Austin's...",
+        "image": "https://realm.io/assets/news/building-2048-swift-cover.png"
+    },
+    {
+        "title": "Realm Cocoa 0.82",
+        "url": "/news/realm-0.82.0/",
+        "date": "August 05, 2014",
+        "content": "We just pushed a Realm Objective-C update to this website and to CocoaPods. Here’s what’s new: Enhancements Updating to core...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Swift for JavaScript Developers",
+        "url": "/news/swift-for-javascript-developers/",
+        "date": "July 30, 2014",
+        "content": "This Tuesday JP Simard gave another talk for the Swift Language User Group (#SLUG) in San Francisco. Hosted by Pubnub,...",
+        "image": "https://realm.io/assets/news/swift-for-javascript-cover.png"
+    },
+    {
+        "title": "Swift Class",
+        "url": "/news/swift-class/",
+        "date": "July 28, 2014",
+        "content": "July 12th marked the inaugural Swift Language User Group Hackday, held in San Francisco. The day kicked off with a...",
+        "image": "https://realm.io/assets/news/swift-class-cover.png"
+    },
+    {
+        "title": "Introducing Realm",
+        "url": "/news/introducing-realm/",
+        "date": "July 15, 2014",
+        "content": "Today we are very proud to introduce Realm, the first database built from the ground-up to run directly inside phones,...",
+        "image": "https://realm.io/assets/news/cocoa-release-cover.png"
+    },
+    {
+        "title": "Swift Thinking",
+        "url": "/news/swift-thinking/",
+        "date": "July 08, 2014",
+        "content": "This past Thursday, Keith Smiley gave the second talk of the Swift Language User Group (#SLUG) in Thoughtbot's San Francisco...",
+        "image": "https://realm.io/assets/news/swift-thinking-cover.png"
+    },
+    {
+        "title": "Swift: Uncharted Territory",
+        "url": "/news/swift-uncharted-territory/",
+        "date": "June 17, 2014",
+        "content": "Last Thursday JP Simard gave the first talk of the Swift Language User Group (#SLUG) in Palo Alto. He started...",
+        "image": "https://realm.io/assets/news/swift-uncharted-territory-cover.png"
+    }
+]

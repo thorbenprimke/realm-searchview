@@ -8,24 +8,22 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
+import com.fasterxml.jackson.core.JsonFactory;
+import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.List;
 
 import co.moonmonkeylabs.realmsearchview.RealmSearchAdapter;
 import co.moonmonkeylabs.realmsearchview.RealmSearchView;
-import co.moonmonkeylabs.realmsearchview.example.model.Business;
+import co.moonmonkeylabs.realmsearchview.example.model.Blog;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
-import io.realm.RealmResults;
 import io.realm.RealmViewHolder;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Realm realm;
     private RealmSearchView realmSearchView;
     private BusinessRecyclerViewAdapter adapter;
 
@@ -35,18 +33,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.search);
 
         resetRealm();
-        realm = Realm.getInstance(this);
-
-        realm.beginTransaction();
-        final List<Business> businessesData = loadBusinessesData();
-        realm.copyToRealm(businessesData);
-        realm.commitTransaction();
-
-        RealmResults<Business> businesses =
-                realm.where(Business.class).findAllSorted("name", true);
+        loadBlogData();
 
         realmSearchView = (RealmSearchView) findViewById(R.id.search_view);
-        adapter = new BusinessRecyclerViewAdapter(getBaseContext(), businesses, Business.class, "name");
+        adapter = new BusinessRecyclerViewAdapter(this, Blog.class, "title");
         realmSearchView.setAdapter(adapter);
     }
 
@@ -55,52 +45,20 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
     }
 
-    public final List<Business> loadBusinessesData() {
-        List<Business> businesses = new ArrayList<>();
-
-        InputStream is = getResources().openRawResource(R.raw.businesses);
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+    private void loadBlogData() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonFactory jsonFactory = new JsonFactory();
         try {
-            String line;
-            int lineNumber = 0;
-            while ((line = reader.readLine()) != null) {
-                if (lineNumber++ == 0) {
-                    continue;
-                }
-
-                String[] rowData = line.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)", -1);
-                if (rowData[6].isEmpty()) {
-                    continue;
-                }
-
-                businesses.add(new Business(
-                        Integer.parseInt(rowData[0]),
-                        removeQuotes(rowData[1]),
-                        Float.parseFloat(removeQuotes(rowData[6])),
-                        Float.parseFloat(removeQuotes(rowData[7]))));
-            }
-        }
-        catch (IOException ex) {}
-        finally {
-            try {
-                is.close();
-            }
-            catch (IOException e) {}
-        }
-        return businesses;
-    }
-
-    private String removeQuotes(String original) {
-        return original.subSequence(1, original.length() - 1).toString();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (realm != null) {
+            JsonParser jp = jsonFactory.createParser(getResources().openRawResource(R.raw.blog));
+            List<Blog> entries = objectMapper.readValue(jp, new TypeReference<List<Blog>>() {
+            });
+            Realm realm = Realm.getInstance(this);
+            realm.beginTransaction();
+            realm.copyToRealm(entries);
+            realm.commitTransaction();
             realm.close();
-            realm = null;
+        } catch (Exception e) {
+            throw new IllegalStateException("Could not load blog data.");
         }
     }
 
@@ -112,24 +70,23 @@ public class MainActivity extends AppCompatActivity {
         Realm.deleteRealm(realmConfig);
     }
 
-    public class BusinessRecyclerViewAdapter extends RealmSearchAdapter<Business,
+    public class BusinessRecyclerViewAdapter extends RealmSearchAdapter<Blog,
                     BusinessRecyclerViewAdapter.ViewHolder> {
 
         public BusinessRecyclerViewAdapter(
                 Context context,
-                RealmResults<Business> realmResults,
                 Class modelClass,
                 String filterColumnName) {
-            super(context, realmResults, modelClass, filterColumnName);
+            super(context, modelClass, filterColumnName);
         }
 
         public class ViewHolder extends RealmViewHolder {
             public FrameLayout container;
-            public TextView quoteTextView;
+            public TextView blogTextView;
             public ViewHolder(FrameLayout container) {
                 super(container);
                 this.container = container;
-                this.quoteTextView = (TextView) container.findViewById(R.id.quote_text_view);
+                this.blogTextView = (TextView) container.findViewById(R.id.blog_text_view);
             }
         }
 
@@ -142,8 +99,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onBindRealmViewHolder(ViewHolder viewHolder, int position) {
-            final Business quoteModel = realmResults.get(position);
-            viewHolder.quoteTextView.setText(quoteModel.getName());
+            final Blog blog = realmResults.get(position);
+            viewHolder.blogTextView.setText(blog.getTitle());
         }
 
         @Override

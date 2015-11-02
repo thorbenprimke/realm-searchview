@@ -64,5 +64,6 @@ public class RealmSearchView extends LinearLayout {
     public void setAdapter(RealmSearchAdapter adapter) {
         this.adapter = adapter;
         realmRecyclerView.setAdapter(adapter);
+        this.adapter.filter(getContext(), "");
     }
 }
