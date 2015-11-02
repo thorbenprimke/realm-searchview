@@ -9,9 +9,9 @@ import butterknife.ButterKnife;
 import co.moonmonkeylabs.realmsearchview.example.model.Blog;
 
 /**
- * Created by thorben on 11/1/15.
+ * View for a {@link Blog} model.
  */
-public class BlogView extends RelativeLayout {
+public class BlogItemView extends RelativeLayout {
 
     @Bind(R.id.emoji)
     TextView emoji;
@@ -25,13 +25,13 @@ public class BlogView extends RelativeLayout {
     @Bind(R.id.description)
     TextView description;
 
-    public BlogView(Context context) {
+    public BlogItemView(Context context) {
         super(context);
         init(context);
     }
 
     private void init(Context context) {
-        inflate(context, R.layout.blog_view, this);
+        inflate(context, R.layout.blog_item_view, this);
         ButterKnife.bind(this);
     }
 

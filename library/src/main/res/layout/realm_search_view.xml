@@ -7,7 +7,7 @@
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search"
+        android:singleLine="true"
         />
 
     <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
@@ -19,3 +19,4 @@
         app:rrvLayoutType="LinearLayout"
         />
 </merge>
+

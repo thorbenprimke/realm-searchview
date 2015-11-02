@@ -148,7 +148,7 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
 
     //
     // The code below is copied from StackOverflow in order to avoid having to pass in the T as a
-    // Class for the Realm filtering.
+    // Class for the Realm query/filtering.
     // http://stackoverflow.com/a/15008017
     //
     /**

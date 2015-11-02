@@ -13,7 +13,7 @@ import android.widget.EditText;
 import static android.view.View.*;
 
 /**
- * A {@link EditText} field with a cancel drawable.
+ * A {@link EditText} field with a clear drawable.
  */
 public class ClearableEditText extends EditText
         implements OnTouchListener, OnFocusChangeListener, TextWatcher {

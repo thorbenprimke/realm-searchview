@@ -3,7 +3,7 @@ package co.moonmonkeylabs.realmsearchview.example.model;
 import io.realm.RealmObject;
 
 /**
- * Created by thorben on 11/1/15.
+ * Blog model.
  */
 public class Blog extends RealmObject {
 

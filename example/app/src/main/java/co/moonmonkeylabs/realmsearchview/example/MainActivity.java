@@ -115,24 +115,24 @@ public class MainActivity extends AppCompatActivity {
 
         public class ViewHolder extends RealmViewHolder {
 
-            private final BlogView blogView;
+            private final BlogItemView blogItemView;
 
-            public ViewHolder(BlogView blogView) {
-                super(blogView);
-                this.blogView = blogView;
+            public ViewHolder(BlogItemView blogItemView) {
+                super(blogItemView);
+                this.blogItemView = blogItemView;
             }
         }
 
         @Override
         public ViewHolder onCreateRealmViewHolder(ViewGroup viewGroup, int viewType) {
-            ViewHolder vh = new ViewHolder(new BlogView(viewGroup.getContext()));
+            ViewHolder vh = new ViewHolder(new BlogItemView(viewGroup.getContext()));
             return vh;
         }
 
         @Override
         public void onBindRealmViewHolder(ViewHolder viewHolder, int position) {
             final Blog blog = realmResults.get(position);
-            viewHolder.blogView.bind(blog);
+            viewHolder.blogItemView.bind(blog);
         }
 
         @Override

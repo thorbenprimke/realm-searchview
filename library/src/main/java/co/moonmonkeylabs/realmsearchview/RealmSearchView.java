@@ -10,13 +10,12 @@ import android.widget.LinearLayout;
 import co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView;
 
 /**
- * A View that has a search bar with result view for displaying typeahead results in a list that is
- * backed by a Realm.
+ * A View that has a search bar with a results view for displaying typeahead results in a list that
+ * is backed by a Realm.
  */
 public class RealmSearchView extends LinearLayout {
 
     private RealmRecyclerView realmRecyclerView;
-
     private ClearableEditText searchBar;
     private RealmSearchAdapter adapter;
 
