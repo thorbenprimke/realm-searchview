@@ -10,7 +10,8 @@ import android.widget.LinearLayout;
 import co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView;
 
 /**
- * Created by thorben on 11/1/15.
+ * A View that has a search bar with result view for displaying typeahead results in a list that is
+ * backed by a Realm.
  */
 public class RealmSearchView extends LinearLayout {
 
@@ -18,6 +19,7 @@ public class RealmSearchView extends LinearLayout {
 
     private EditText searchBar;
     private RealmSearchAdapter adapter;
+
 
     public RealmSearchView(Context context) {
         super(context);
@@ -45,17 +47,15 @@ public class RealmSearchView extends LinearLayout {
                 new TextWatcher() {
                     @Override
                     public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
                     }
 
                     @Override
                     public void onTextChanged(CharSequence s, int start, int before, int count) {
-
                     }
 
                     @Override
                     public void afterTextChanged(Editable s) {
-                        adapter.filter(getContext(), s.toString());
+                        adapter.filter(s.toString());
                     }
                 }
         );
@@ -64,6 +64,6 @@ public class RealmSearchView extends LinearLayout {
     public void setAdapter(RealmSearchAdapter adapter) {
         this.adapter = adapter;
         realmRecyclerView.setAdapter(adapter);
-        this.adapter.filter(getContext(), "");
+        this.adapter.filter("");
     }
 }

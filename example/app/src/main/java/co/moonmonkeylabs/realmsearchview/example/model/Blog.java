@@ -12,6 +12,7 @@ public class Blog extends RealmObject {
     private String content;
     private String date;
     private String image;
+    private String emoji;
 
     public Blog() {
     }
@@ -54,5 +55,13 @@ public class Blog extends RealmObject {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getEmoji() {
+        return emoji;
+    }
+
+    public void setEmoji(String emoji) {
+        this.emoji = emoji;
     }
 }

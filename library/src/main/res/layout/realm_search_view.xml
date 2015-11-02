@@ -7,7 +7,7 @@
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="type a filter query"
+        android:hint="Search"
         />
 
     <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView

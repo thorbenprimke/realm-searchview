@@ -22,16 +22,17 @@ android {
     packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/NOTICE'
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
     }
 }
 
 dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:22.2.1'
-
     compile 'com.android.support:recyclerview-v7:22.0.+'
 
     compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
+    compile 'com.jakewharton:butterknife:7.0.1'
 
     compile project(':library')
 }

@@ -3,17 +3,17 @@ package co.moonmonkeylabs.realmsearchview.example;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.TextView;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Random;
 
 import co.moonmonkeylabs.realmsearchview.RealmSearchAdapter;
 import co.moonmonkeylabs.realmsearchview.RealmSearchView;
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RealmSearchView realmSearchView;
     private BusinessRecyclerViewAdapter adapter;
+    private Realm realm;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
         loadBlogData();
 
         realmSearchView = (RealmSearchView) findViewById(R.id.search_view);
-        adapter = new BusinessRecyclerViewAdapter(this, Blog.class, "title");
+
+        realm = Realm.getInstance(this);
+        adapter = new BusinessRecyclerViewAdapter(this, realm, "title");
         realmSearchView.setAdapter(adapter);
     }
 
@@ -45,13 +48,43 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (realm != null) {
+            realm.close();
+            realm = null;
+        }
+    }
+
     private void loadBlogData() {
+        SimpleDateFormat formatIn = new SimpleDateFormat("MMMM d, yyyy");
+        SimpleDateFormat formatOut = new SimpleDateFormat("MM/d/yy");
         ObjectMapper objectMapper = new ObjectMapper();
         JsonFactory jsonFactory = new JsonFactory();
+        Random random = new Random();
         try {
-            JsonParser jp = jsonFactory.createParser(getResources().openRawResource(R.raw.blog));
-            List<Blog> entries = objectMapper.readValue(jp, new TypeReference<List<Blog>>() {
-            });
+            JsonParser jsonParserBlog =
+                    jsonFactory.createParser(getResources().openRawResource(R.raw.blog));
+            List<Blog> entries =
+                    objectMapper.readValue(jsonParserBlog, new TypeReference<List<Blog>>() {
+                    });
+
+            JsonParser jsonParserEmoji =
+                    jsonFactory.createParser(getResources().openRawResource(R.raw.emoji));
+            List<String> emojies =
+                    objectMapper.readValue(jsonParserEmoji, new TypeReference<List<String>>() {});
+
+            int numEmoji = emojies.size();
+            for (Blog blog : entries) {
+                blog.setEmoji(emojies.get(random.nextInt(numEmoji)));
+                try {
+                    blog.setDate(formatOut.format(formatIn.parse(blog.getDate())));
+                } catch (ParseException e) {
+                    e.printStackTrace();
+                }
+            }
+
             Realm realm = Realm.getInstance(this);
             realm.beginTransaction();
             realm.copyToRealm(entries);
@@ -70,37 +103,36 @@ public class MainActivity extends AppCompatActivity {
         Realm.deleteRealm(realmConfig);
     }
 
-    public class BusinessRecyclerViewAdapter extends RealmSearchAdapter<Blog,
-                    BusinessRecyclerViewAdapter.ViewHolder> {
+    public class BusinessRecyclerViewAdapter
+            extends RealmSearchAdapter<Blog, BusinessRecyclerViewAdapter.ViewHolder> {
 
         public BusinessRecyclerViewAdapter(
                 Context context,
-                Class modelClass,
+                Realm realm,
                 String filterColumnName) {
-            super(context, modelClass, filterColumnName);
+            super(context, realm, filterColumnName);
         }
 
         public class ViewHolder extends RealmViewHolder {
-            public FrameLayout container;
-            public TextView blogTextView;
-            public ViewHolder(FrameLayout container) {
-                super(container);
-                this.container = container;
-                this.blogTextView = (TextView) container.findViewById(R.id.blog_text_view);
+
+            private final BlogView blogView;
+
+            public ViewHolder(BlogView blogView) {
+                super(blogView);
+                this.blogView = blogView;
             }
         }
 
         @Override
         public ViewHolder onCreateRealmViewHolder(ViewGroup viewGroup, int viewType) {
-            View v = inflater.inflate(R.layout.item_view, viewGroup, false);
-            ViewHolder vh = new ViewHolder((FrameLayout) v);
+            ViewHolder vh = new ViewHolder(new BlogView(viewGroup.getContext()));
             return vh;
         }
 
         @Override
         public void onBindRealmViewHolder(ViewHolder viewHolder, int position) {
             final Blog blog = realmResults.get(position);
-            viewHolder.blogTextView.setText(blog.getTitle());
+            viewHolder.blogView.bind(blog);
         }
 
         @Override
