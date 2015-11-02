@@ -1,6 +1,7 @@
 package co.moonmonkeylabs.realmsearchview;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.GenericArrayType;
@@ -15,43 +16,135 @@ import java.util.Map;
 import io.realm.Realm;
 import io.realm.RealmBasedRecyclerViewAdapter;
 import io.realm.RealmObject;
+import io.realm.RealmQuery;
 import io.realm.RealmResults;
 import io.realm.RealmViewHolder;
 
 /**
- * Created by thorben on 11/1/15.
+ * A custom adapter for the {@link RealmSearchView}. It has options to customize the filtering.
  */
 public abstract class RealmSearchAdapter<T extends RealmObject, VH extends RealmViewHolder>
         extends RealmBasedRecyclerViewAdapter<T, VH> {
 
     private Realm realm;
-    private String filterColumnName;
     protected Class<T> clazz;
 
+    private String filterKey;
 
+    private boolean useContains;
+    private boolean useCaseSensitive;
+    private boolean sortAscending;
+    private String sortKey;
+    private String basePredicate;
+
+    /**
+     * Creates a {@link RealmSearchAdapter} with only the filter columnKey. The defaults are:
+     * - useContains: true
+     * - caseSensitive: false
+     * - sortAscending: true
+     * - sortKey: filterKey
+     * - basePredicate: not set
+     */
     public RealmSearchAdapter(
-            Context context,
-            Realm realm,
-            String filterColumnName) {
+            @NonNull Context context,
+            @NonNull Realm realm,
+            @NonNull String filterKey) {
+        this(context, realm, filterKey, true, false, true, filterKey, null);
+    }
+
+    /**
+     * Creates a {@link RealmSearchAdapter} with parameters for all options.
+     */
+    public RealmSearchAdapter(
+            @NonNull Context context,
+            @NonNull Realm realm,
+            @NonNull String filterKey,
+            boolean useContains,
+            boolean useCaseSensitive,
+            boolean sortAscending,
+            String sortKey,
+            String basePredicate) {
         super(context, null, false, false);
         this.realm = realm;
-        this.filterColumnName = filterColumnName;
+        this.filterKey = filterKey;
+        this.useContains = useContains;
+        this.useCaseSensitive = useCaseSensitive;
+        this.sortAscending = sortAscending;
+        this.sortKey = sortKey;
+        this.basePredicate = basePredicate;
 
         clazz = (Class<T>) getTypeArguments(RealmSearchAdapter.class, getClass()).get(0);
     }
 
     public void filter(String input) {
         RealmResults<T> businesses;
-        if (input.isEmpty()) {
-            businesses = realm.where(clazz).findAllSorted(filterColumnName, true);
+        RealmQuery<T> where = realm.where(clazz);
+        if (input.isEmpty() && basePredicate != null) {
+            if (useContains) {
+                where = where.contains(filterKey, basePredicate, useCaseSensitive);
+            } else {
+                where = where.beginsWith(filterKey, basePredicate, useCaseSensitive);
+            }
+        } else if (!input.isEmpty()) {
+            if (useContains) {
+                where = where.contains(filterKey, input, useCaseSensitive);
+            } else {
+                where = where.beginsWith(filterKey, input, useCaseSensitive);
+            }
+        }
+
+        if (sortKey == null) {
+            businesses = where.findAll();
         } else {
-            businesses = realm.where(clazz)
-                    .contains(filterColumnName, input, false)
-                    .findAllSorted(filterColumnName, true);
+            businesses = where.findAllSorted(sortKey, sortAscending);
         }
         updateRealmResults(businesses);
     }
 
+    /**
+     * The columnKey by which the results are filtered.
+     */
+    public void setFilterKey(String filterKey) {
+        if (filterKey == null) {
+            throw new IllegalStateException("The filterKey cannot be null.");
+        }
+        this.filterKey = filterKey;
+    }
+
+    /**
+     * If true, {@link RealmQuery#contains} is used else {@link RealmQuery#beginsWith}.
+     */
+    public void setUseContains(boolean useContains) {
+        this.useContains = useContains;
+    }
+
+    /**
+     * Sets if the filtering is case sensitive or case insensitive.
+     */
+    public void setUseCaseSensitive(boolean useCaseSensitive) {
+        this.useCaseSensitive = useCaseSensitive;
+    }
+
+    /**
+     * Sets if the sort order is ascending or descending.
+     */
+    public void setSortAscending(boolean sortAscending) {
+        this.sortAscending = sortAscending;
+    }
+
+    /**
+     * Sets the sort columnKey.
+     */
+    public void setSortKey(String sortKey) {
+        this.sortKey = sortKey;
+    }
+
+    /**
+     * Sets the basePredicate which is used filters the results when the search query is empty.
+     */
+    public void setBasePredicate(String basePredicate) {
+        this.basePredicate = basePredicate;
+    }
 
     //
     // The code below is copied from StackOverflow in order to avoid having to pass in the T as a
