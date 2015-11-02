@@ -25,7 +25,7 @@ import io.realm.RealmViewHolder;
 public class MainActivity extends AppCompatActivity {
 
     private RealmSearchView realmSearchView;
-    private BusinessRecyclerViewAdapter adapter;
+    private BlogRecyclerViewAdapter adapter;
     private Realm realm;
 
     @Override
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         realmSearchView = (RealmSearchView) findViewById(R.id.search_view);
 
         realm = Realm.getInstance(this);
-        adapter = new BusinessRecyclerViewAdapter(this, realm, "title");
+        adapter = new BlogRecyclerViewAdapter(this, realm, "title");
         realmSearchView.setAdapter(adapter);
     }
 
@@ -103,10 +103,10 @@ public class MainActivity extends AppCompatActivity {
         Realm.deleteRealm(realmConfig);
     }
 
-    public class BusinessRecyclerViewAdapter
-            extends RealmSearchAdapter<Blog, BusinessRecyclerViewAdapter.ViewHolder> {
+    public class BlogRecyclerViewAdapter
+            extends RealmSearchAdapter<Blog, BlogRecyclerViewAdapter.ViewHolder> {
 
-        public BusinessRecyclerViewAdapter(
+        public BlogRecyclerViewAdapter(
                 Context context,
                 Realm realm,
                 String filterColumnName) {
