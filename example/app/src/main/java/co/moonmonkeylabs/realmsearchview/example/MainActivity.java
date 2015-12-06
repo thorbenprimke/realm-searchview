@@ -17,6 +17,7 @@ import java.util.Random;
 
 import co.moonmonkeylabs.realmsearchview.RealmSearchAdapter;
 import co.moonmonkeylabs.realmsearchview.RealmSearchView;
+import co.moonmonkeylabs.realmsearchview.RealmSearchViewHolder;
 import co.moonmonkeylabs.realmsearchview.example.model.Blog;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             super(context, realm, filterColumnName);
         }
 
-        public class ViewHolder extends RealmViewHolder {
+        public class ViewHolder extends RealmSearchViewHolder {
 
             private final BlogItemView blogItemView;
 
@@ -133,11 +134,6 @@ public class MainActivity extends AppCompatActivity {
         public void onBindRealmViewHolder(ViewHolder viewHolder, int position) {
             final Blog blog = realmResults.get(position);
             viewHolder.blogItemView.bind(blog);
-        }
-
-        @Override
-        public ViewHolder convertViewHolder(RealmViewHolder viewHolder) {
-            return ViewHolder.class.cast(viewHolder);
         }
     }
 }

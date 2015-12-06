@@ -3,5 +3,7 @@
     <declare-styleable name="RealmSearchView">
         <attr name="rsvHint" format="reference"/>
         <attr name="rsvClearDrawable" format="reference"/>
+        <attr name="rsvAddFooter" format="boolean"/>
+        <attr name="rsvAddFooterText" format="reference"/>
     </declare-styleable>
 </resources>
