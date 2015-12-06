@@ -69,7 +69,7 @@ public class RealmSearchView extends LinearLayout {
 
     private Handler handler = null;
 
-    public void addFooterHandler(final String search) {
+    private void addFooterHandler(final String search) {
         if (!addFooterOnIdle) {
             return;
         }
@@ -116,5 +116,9 @@ public class RealmSearchView extends LinearLayout {
         this.adapter = adapter;
         realmRecyclerView.setAdapter(adapter);
         this.adapter.filter("");
+    }
+
+    public String getSearchBarText() {
+        return searchBar.getText().toString();
     }
 }
