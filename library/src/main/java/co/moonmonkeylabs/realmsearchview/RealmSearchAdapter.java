@@ -2,6 +2,13 @@ package co.moonmonkeylabs.realmsearchview;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.GenericArrayType;
@@ -23,7 +30,7 @@ import io.realm.RealmViewHolder;
 /**
  * A custom adapter for the {@link RealmSearchView}. It has options to customize the filtering.
  */
-public abstract class RealmSearchAdapter<T extends RealmObject, VH extends RealmViewHolder>
+public abstract class RealmSearchAdapter<T extends RealmObject, VH extends RealmSearchViewHolder>
         extends RealmBasedRecyclerViewAdapter<T, VH> {
 
     private Realm realm;
@@ -74,6 +81,20 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
         this.basePredicate = basePredicate;
 
         clazz = (Class<T>) getTypeArguments(RealmSearchAdapter.class, getClass()).get(0);
+    }
+
+    @Override
+    public void onBindFooterViewHolder(VH holder, int position) {
+        holder.footerTextView.setText("I'm a footer");
+    }
+
+    @Override
+    public VH onCreateFooterViewHolder(ViewGroup viewGroup) {
+        View v = inflater.inflate(R.layout.footer_view, viewGroup, false);
+        RealmSearchViewHolder vh = new RealmSearchViewHolder(
+                (FrameLayout) v,
+                (TextView) v.findViewById(R.id.footer_text_view));
+        return (VH) vh;
     }
 
     public void filter(String input) {

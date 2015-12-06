@@ -2,6 +2,7 @@ package co.moonmonkeylabs.realmsearchview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -15,10 +16,13 @@ import co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView;
  */
 public class RealmSearchView extends LinearLayout {
 
+
+
     private RealmRecyclerView realmRecyclerView;
     private ClearableEditText searchBar;
     private RealmSearchAdapter adapter;
 
+    private boolean addFooterOnIdle;
 
     public RealmSearchView(Context context) {
         super(context);
@@ -57,9 +61,35 @@ public class RealmSearchView extends LinearLayout {
                     @Override
                     public void afterTextChanged(Editable s) {
                         adapter.filter(s.toString());
+                        addFooterHandler(s.toString());
                     }
                 }
         );
+    }
+
+    private Handler handler = null;
+
+    public void addFooterHandler(final String search) {
+        if (!addFooterOnIdle) {
+            return;
+        }
+        if (handler != null) {
+            return;
+        }
+
+        adapter.removeFooter();
+        handler = new Handler();
+        handler.postDelayed(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        if (search.equals(searchBar.getText().toString())) {
+                            adapter.addFooter();
+                        }
+                        handler = null;
+                    }
+                },
+                300);
     }
 
     private void initAttrs(Context context, AttributeSet attrs) {
@@ -76,6 +106,8 @@ public class RealmSearchView extends LinearLayout {
         if (clearDrawableResId != -1) {
             searchBar.setClearDrawable(getResources().getDrawable(clearDrawableResId));
         }
+
+        addFooterOnIdle = typedArray.getBoolean(R.styleable.RealmSearchView_rsvAddFooter, false);
 
         typedArray.recycle();
     }
