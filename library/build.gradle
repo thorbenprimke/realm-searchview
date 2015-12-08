@@ -20,7 +20,7 @@ android {
 
 dependencies {
     compile 'com.android.support:recyclerview-v7:22.0.+'
-    compile 'io.realm:realm-android:0.82.+'
+    compile 'io.realm:realm-android:0.86.0'
 
     compile 'com.github.thorbenprimke:realm-recyclerview:0.9.9'
 }
