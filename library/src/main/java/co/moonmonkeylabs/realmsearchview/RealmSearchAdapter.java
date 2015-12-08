@@ -45,8 +45,8 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
     /**
      * Creates a {@link RealmSearchAdapter} with only the filter columnKey. The defaults are:
      * - useContains: true
-     * - caseSensitive: false
-     * - sortAscending: true
+     * - casing: insensitive
+     * - sortOrder: ascending
      * - sortKey: filterKey
      * - basePredicate: not set
      */
