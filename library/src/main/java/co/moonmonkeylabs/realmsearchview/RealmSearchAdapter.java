@@ -2,13 +2,10 @@ package co.moonmonkeylabs.realmsearchview;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 import java.lang.reflect.Array;
 import java.lang.reflect.GenericArrayType;
@@ -20,12 +17,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import io.realm.Case;
 import io.realm.Realm;
 import io.realm.RealmBasedRecyclerViewAdapter;
 import io.realm.RealmObject;
 import io.realm.RealmQuery;
 import io.realm.RealmResults;
-import io.realm.RealmViewHolder;
+import io.realm.Sort;
 
 /**
  * A custom adapter for the {@link RealmSearchView}. It has options to customize the filtering.
@@ -39,16 +37,16 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
     private String filterKey;
 
     private boolean useContains;
-    private boolean useCaseSensitive;
-    private boolean sortAscending;
+    private Case casing;
+    private Sort sortOrder;
     private String sortKey;
     private String basePredicate;
 
     /**
      * Creates a {@link RealmSearchAdapter} with only the filter columnKey. The defaults are:
      * - useContains: true
-     * - caseSensitive: false
-     * - sortAscending: true
+     * - casing: insensitive
+     * - sortOrder: ascending
      * - sortKey: filterKey
      * - basePredicate: not set
      */
@@ -56,7 +54,7 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
             @NonNull Context context,
             @NonNull Realm realm,
             @NonNull String filterKey) {
-        this(context, realm, filterKey, true, false, true, filterKey, null);
+        this(context, realm, filterKey, true, Case.INSENSITIVE, Sort.ASCENDING, filterKey, null);
     }
 
     /**
@@ -67,16 +65,16 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
             @NonNull Realm realm,
             @NonNull String filterKey,
             boolean useContains,
-            boolean useCaseSensitive,
-            boolean sortAscending,
+            Case casing,
+            Sort sortOrder,
             String sortKey,
             String basePredicate) {
         super(context, null, false, false);
         this.realm = realm;
         this.filterKey = filterKey;
         this.useContains = useContains;
-        this.useCaseSensitive = useCaseSensitive;
-        this.sortAscending = sortAscending;
+        this.casing = casing;
+        this.sortOrder = sortOrder;
         this.sortKey = sortKey;
         this.basePredicate = basePredicate;
 
@@ -102,22 +100,22 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
         RealmQuery<T> where = realm.where(clazz);
         if (input.isEmpty() && basePredicate != null) {
             if (useContains) {
-                where = where.contains(filterKey, basePredicate, useCaseSensitive);
+                where = where.contains(filterKey, basePredicate, casing);
             } else {
-                where = where.beginsWith(filterKey, basePredicate, useCaseSensitive);
+                where = where.beginsWith(filterKey, basePredicate, casing);
             }
         } else if (!input.isEmpty()) {
             if (useContains) {
-                where = where.contains(filterKey, input, useCaseSensitive);
+                where = where.contains(filterKey, input, casing);
             } else {
-                where = where.beginsWith(filterKey, input, useCaseSensitive);
+                where = where.beginsWith(filterKey, input, casing);
             }
         }
 
         if (sortKey == null) {
             businesses = where.findAll();
         } else {
-            businesses = where.findAllSorted(sortKey, sortAscending);
+            businesses = where.findAllSorted(sortKey, sortOrder);
         }
         updateRealmResults(businesses);
     }
@@ -142,15 +140,15 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
     /**
      * Sets if the filtering is case sensitive or case insensitive.
      */
-    public void setUseCaseSensitive(boolean useCaseSensitive) {
-        this.useCaseSensitive = useCaseSensitive;
+    public void setCasing(Case casing) {
+        this.casing = casing;
     }
 
     /**
      * Sets if the sort order is ascending or descending.
      */
-    public void setSortAscending(boolean sortAscending) {
-        this.sortAscending = sortAscending;
+    public void setSortOrder(Sort sortOrder) {
+        this.sortOrder = sortOrder;
     }
 
     /**
