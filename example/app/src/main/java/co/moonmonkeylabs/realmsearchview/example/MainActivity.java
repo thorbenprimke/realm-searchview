@@ -3,7 +3,10 @@ package co.moonmonkeylabs.realmsearchview.example;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
@@ -21,7 +24,6 @@ import co.moonmonkeylabs.realmsearchview.RealmSearchViewHolder;
 import co.moonmonkeylabs.realmsearchview.example.model.Blog;
 import io.realm.Realm;
 import io.realm.RealmConfiguration;
-import io.realm.RealmViewHolder;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -116,7 +118,11 @@ public class MainActivity extends AppCompatActivity {
 
         public class ViewHolder extends RealmSearchViewHolder {
 
-            private final BlogItemView blogItemView;
+            private BlogItemView blogItemView;
+
+            public ViewHolder(FrameLayout container, TextView footerTextView) {
+                super(container, footerTextView);
+            }
 
             public ViewHolder(BlogItemView blogItemView) {
                 super(blogItemView);
@@ -134,6 +140,26 @@ public class MainActivity extends AppCompatActivity {
         public void onBindRealmViewHolder(ViewHolder viewHolder, int position) {
             final Blog blog = realmResults.get(position);
             viewHolder.blogItemView.bind(blog);
+        }
+
+        @Override
+        public ViewHolder onCreateFooterViewHolder(ViewGroup viewGroup) {
+            View v = inflater.inflate(R.layout.footer_view, viewGroup, false);
+            return new ViewHolder(
+                    (FrameLayout) v,
+                    (TextView) v.findViewById(R.id.footer_text_view));
+        }
+
+        @Override
+        public void onBindFooterViewHolder(ViewHolder holder, int position) {
+            super.onBindFooterViewHolder(holder, position);
+            holder.itemView.setOnClickListener(
+                    new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                        }
+                    }
+            );
         }
     }
 }

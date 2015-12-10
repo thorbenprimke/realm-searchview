@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "22.0.1"
+    buildToolsVersion '23.0.2'
 
     defaultConfig {
         minSdkVersion 15
@@ -21,6 +21,5 @@ android {
 dependencies {
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'io.realm:realm-android:0.86.0'
-
-    compile 'com.github.thorbenprimke:realm-recyclerview:0.9.9'
+    compile 'com.github.thorbenprimke:realm-recyclerview:0.9.10'
 }
