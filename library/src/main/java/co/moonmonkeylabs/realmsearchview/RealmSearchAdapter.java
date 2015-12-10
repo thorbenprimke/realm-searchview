@@ -60,6 +60,7 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
     /**
      * Creates a {@link RealmSearchAdapter} with parameters for all options.
      */
+    @SuppressWarnings("unchecked")
     public RealmSearchAdapter(
             @NonNull Context context,
             @NonNull Realm realm,
@@ -87,6 +88,7 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
     }
 
     @Override
+    @SuppressWarnings("unchecked")
     public VH onCreateFooterViewHolder(ViewGroup viewGroup) {
         View v = inflater.inflate(R.layout.footer_view, viewGroup, false);
         RealmSearchViewHolder vh = new RealmSearchViewHolder(
