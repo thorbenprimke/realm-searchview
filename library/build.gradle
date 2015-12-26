@@ -19,5 +19,5 @@ android {
 }
 
 dependencies {
-    compile 'com.github.thorbenprimke:realm-recyclerview:0.9.10'
+    compile 'com.github.thorbenprimke:realm-recyclerview:0.9.12'
 }
