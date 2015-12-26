@@ -7,6 +7,7 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView;
 
@@ -15,8 +16,6 @@ import co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView;
  * is backed by a Realm.
  */
 public class RealmSearchView extends LinearLayout {
-
-
 
     private RealmRecyclerView realmRecyclerView;
     private ClearableEditText searchBar;
@@ -120,5 +119,17 @@ public class RealmSearchView extends LinearLayout {
 
     public String getSearchBarText() {
         return searchBar.getText().toString();
+    }
+
+    public void addSearchBarTextChangedListener(TextWatcher watcher) {
+        searchBar.addTextChangedListener(watcher);
+    }
+
+    public void removeSearchBarTextChangedListener(TextWatcher watcher) {
+        searchBar.removeTextChangedListener(watcher);
+    }
+
+    public void setOnEditorActionListener(TextView.OnEditorActionListener onEditorActionListener) {
+        searchBar.setOnEditorActionListener(onEditorActionListener);
     }
 }
