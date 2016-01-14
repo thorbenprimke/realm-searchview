@@ -97,8 +97,7 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
         return (VH) vh;
     }
 
-    public void filter(String input) {
-        RealmResults<T> businesses;
+    protected RealmQuery<T> createFilter(String input) {
         RealmQuery<T> where = realm.where(clazz);
         if (input.isEmpty() && basePredicate != null) {
             if (useContains) {
@@ -114,12 +113,19 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
             }
         }
 
+        return where;
+    }
+
+    public void filter(String input) {
+        RealmResults<T> results;
+        RealmQuery<T> where = createFilter(input);
+
         if (sortKey == null) {
-            businesses = where.findAll();
+            results = where.findAll();
         } else {
-            businesses = where.findAllSorted(sortKey, sortOrder);
+            results = where.findAllSorted(sortKey, sortOrder);
         }
-        updateRealmResults(businesses);
+        updateRealmResults(results);
     }
 
     /**
