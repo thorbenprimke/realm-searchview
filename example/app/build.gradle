@@ -33,6 +33,6 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'io.reactivex:rxjava:1.1.0'
-//    compile project(':library')
-    compile 'com.github.thorbenprimke:realm-searchview:0.9.4'
+    compile project(':library')
+//    compile 'com.github.thorbenprimke:realm-searchview:0.9.4'
 }

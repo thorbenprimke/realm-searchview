@@ -69,26 +69,29 @@ public class RealmSearchView extends LinearLayout {
     private Handler handler = null;
 
     private void addFooterHandler(final String search) {
-        if (!addFooterOnIdle) {
-            return;
-        }
-        if (handler != null) {
-            return;
-        }
-
         adapter.removeFooter();
-        handler = new Handler();
-        handler.postDelayed(
-                new Runnable() {
-                    @Override
-                    public void run() {
-                        if (search.equals(searchBar.getText().toString())) {
-                            adapter.addFooter();
-                        }
-                        handler = null;
-                    }
-                },
-                300);
+        adapter.addFooter();
+
+//        if (!addFooterOnIdle) {
+//            return;
+//        }
+//        if (handler != null) {
+//            return;
+//        }
+//
+//        adapter.removeFooter();
+//        handler = new Handler();
+//        handler.postDelayed(
+//                new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        if (search.equals(searchBar.getText().toString())) {
+//                            adapter.addFooter();
+//                        }
+//                        handler = null;
+//                    }
+//                },
+//                300);
     }
 
     private void initAttrs(Context context, AttributeSet attrs) {
