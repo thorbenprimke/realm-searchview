@@ -1,6 +1,5 @@
 apply plugin: 'com.android.application'
-// This does not break the build when Android Studio is missing the JRebel for Android plugin.
-apply plugin: 'com.zeroturnaround.jrebel.android'
+apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 23
@@ -33,6 +32,6 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.6.3'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'io.reactivex:rxjava:1.1.0'
-//    compile project(':library')
-    compile 'com.github.thorbenprimke:realm-searchview:0.9.4'
+    compile project(':library')
+//    compile 'com.github.thorbenprimke:realm-searchview:0.9.4'
 }
