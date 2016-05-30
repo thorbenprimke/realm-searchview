@@ -16,7 +16,7 @@ It's easily customizable via layout attributes and adapter parameters.
 
 ```
 	dependencies {
-	        compile 'com.github.thorbenprimke:realm-searchview:0.9.4'
+	        compile 'com.github.thorbenprimke:realm-searchview:0.9.6'
 	}
 ```
 
