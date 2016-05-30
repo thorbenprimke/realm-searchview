@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         realmSearchView = (RealmSearchView) findViewById(R.id.search_view);
 
-        realm = Realm.getInstance(this);
+        realm = Realm.getInstance(getRealmConfig());
         adapter = new BlogRecyclerViewAdapter(this, realm, "title");
         realmSearchView.setAdapter(adapter);
     }
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            Realm realm = Realm.getInstance(this);
+            Realm realm = Realm.getInstance(getRealmConfig());
             realm.beginTransaction();
             realm.copyToRealm(entries);
             realm.commitTransaction();
@@ -98,12 +98,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void resetRealm() {
-        RealmConfiguration realmConfig = new RealmConfiguration
+    private RealmConfiguration getRealmConfig() {
+        return new RealmConfiguration
                 .Builder(this)
                 .deleteRealmIfMigrationNeeded()
                 .build();
-        Realm.deleteRealm(realmConfig);
+    }
+
+    private void resetRealm() {
+        Realm.deleteRealm(getRealmConfig());
     }
 
     public class BlogRecyclerViewAdapter
