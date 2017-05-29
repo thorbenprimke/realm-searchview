@@ -117,6 +117,14 @@ public class RealmSearchView extends LinearLayout {
         this.adapter.filter("");
     }
 
+    public void setSearchBarText(CharSequence text) {
+        searchBar.setText(text);
+    }
+
+    public void setSearchBarText(int resid) {
+        searchBar.setText(resid);
+    }
+
     public String getSearchBarText() {
         return searchBar.getText().toString();
     }
