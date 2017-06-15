@@ -59,8 +59,10 @@ public class RealmSearchView extends LinearLayout {
 
                     @Override
                     public void afterTextChanged(Editable s) {
-                        adapter.filter(s.toString());
-                        addFooterHandler(s.toString());
+                        if (adapter != null) {
+                            adapter.filter(s.toString());
+                            addFooterHandler(s.toString());
+                        }
                     }
                 }
         );
