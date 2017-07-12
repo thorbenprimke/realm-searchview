@@ -8,7 +8,8 @@
     <co.moonmonkeylabs.realmsearchview.RealmSearchView
         android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="24dp"
+        android:background="@android:color/white"
         app:rsvHint="@string/search_hint"
         />
 </FrameLayout>
