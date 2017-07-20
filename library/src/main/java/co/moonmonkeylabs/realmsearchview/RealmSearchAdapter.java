@@ -20,6 +20,7 @@ import java.util.Map;
 import io.realm.Case;
 import io.realm.Realm;
 import io.realm.RealmBasedRecyclerViewAdapter;
+import io.realm.RealmList;
 import io.realm.RealmObject;
 import io.realm.RealmQuery;
 import io.realm.RealmResults;
@@ -41,6 +42,8 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
     private Sort sortOrder;
     private String sortKey;
     private String basePredicate;
+    private RealmList<T> customRealmList;
+    private RealmResults<T> customRealmResults;
 
     /**
      * Creates a {@link RealmSearchAdapter} with only the filter columnKey. The defaults are:
@@ -82,6 +85,40 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
         clazz = (Class<T>) getTypeArguments(RealmSearchAdapter.class, getClass()).get(0);
     }
 
+    /**
+     * Creates a {@link RealmSearchAdapter} with a custom RealmList and the filter columnKey. The defaults are:
+     * - useContains: true
+     * - casing: insensitive
+     * - sortOrder: ascending
+     * - sortKey: filterKey
+     * - basePredicate: not set
+     */
+    public RealmSearchAdapter(
+            @NonNull Context context,
+            @NonNull Realm realm,
+            @NonNull final RealmList<T> realmList,
+            @NonNull String filterKey) {
+        this(context, realm, filterKey, true, Case.INSENSITIVE, Sort.ASCENDING, filterKey, null);
+        this.customRealmList = realmList;
+    }
+
+    /**
+     * Creates a {@link RealmSearchAdapter} with a custom RealmResults and the filter columnKey. The defaults are:
+     * - useContains: true
+     * - casing: insensitive
+     * - sortOrder: ascending
+     * - sortKey: filterKey
+     * - basePredicate: not set
+     */
+    public RealmSearchAdapter(
+            @NonNull Context context,
+            @NonNull Realm realm,
+            @NonNull final RealmResults<T> realmResults,
+            @NonNull String filterKey) {
+        this(context, realm, filterKey, true, Case.INSENSITIVE, Sort.ASCENDING, filterKey, null);
+        this.customRealmResults = realmResults;
+    }
+
     @Override
     public void onBindFooterViewHolder(VH holder, int position) {
         holder.footerTextView.setText("I'm a footer");
@@ -99,7 +136,16 @@ public abstract class RealmSearchAdapter<T extends RealmObject, VH extends Realm
 
     public void filter(String input) {
         RealmResults<T> businesses;
-        RealmQuery<T> where = realm.where(clazz);
+        RealmQuery<T> where;
+
+        if(customRealmResults != null && customRealmResults.isValid()){
+            where = customRealmResults.where();
+        }else if(customRealmList != null && customRealmList.isValid()) {
+            where = customRealmList.where();
+        } else {
+            where = realm.where(clazz);
+        }
+
         if (input.isEmpty() && basePredicate != null) {
             if (useContains) {
                 where = where.contains(filterKey, basePredicate, casing);
